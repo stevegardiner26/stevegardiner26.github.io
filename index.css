@@ -1,0 +1,14 @@
+
+section {
+    height: 400px;
+}
+
+.home-main {
+    background-color: lightslategray;
+    height: 700px;
+}
+
+footer {
+    height: 150px;
+    background: #333;
+}
