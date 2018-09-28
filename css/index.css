@@ -1,0 +1,32 @@
+footer {
+    background: #333;
+    height: 300px;
+}
+
+section {
+    height: 200px;
+}
+
+.home-main {
+    background: lightslategray;
+    height: 800px;
+}
+
+.home-main .container {
+    background: pink;
+    height: 300px;
+    transform: translateY(50%);
+}
+
+.home-about {
+    background: lightskyblue;
+    height: 300px;
+}
+
+.home-about .profile-pic {
+    width: 200px;
+    height: 200px;
+    background: #000;
+    border-radius: 50%;
+    transform: translateY(50px);
+}
