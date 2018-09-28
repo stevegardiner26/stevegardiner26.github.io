@@ -1,10 +1,15 @@
 footer {
-    background: #333;
-    height: 300px;
+
 }
 
 section {
     height: 200px;
+}
+
+nav {
+    position: fixed !important;
+    width: 100vw;
+    z-index: 10000;
 }
 
 .home-main {
@@ -15,7 +20,7 @@ section {
 .home-main .container {
     background: pink;
     height: 300px;
-    transform: translateY(50%);
+    transform: translateY(250px);
 }
 
 .home-about {
@@ -29,4 +34,32 @@ section {
     background: #000;
     border-radius: 50%;
     transform: translateY(50px);
+}
+
+.home-about .container {
+    transform: translateY(110px);
+}
+
+.home-skills {
+    height: 400px;
+    background: green;
+}
+
+.home-skills h2 {
+    color: white;
+}
+
+.home-skills .col-md{
+    height: 200px;
+    margin: 50px 30px;
+    background: #333;
+}
+
+.home-projects {
+    height: 300px;
+    background: lightcoral;
+}
+
+.home-contact {
+    height: 800px;
 }
