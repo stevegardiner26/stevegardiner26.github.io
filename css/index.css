@@ -84,6 +84,10 @@ nav .active {
     transition-timing-function: ease-out;
 }
 
+.innerCard img {
+    padding: 10px;
+}
+
 .innerCard:hover {
     transform: scale(1.25);
 }
@@ -92,8 +96,12 @@ nav .active {
     font-weight: bold;
 }
 
-.home-skills img {
-    padding: 10px;
+.home-skills .more {
+    color: rgb(2,148,0);
+}
+
+.home-skills .more:hover {
+
 }
 
 .home-projects {
