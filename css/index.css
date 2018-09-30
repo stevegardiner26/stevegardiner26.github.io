@@ -209,6 +209,14 @@ nav .active {
     height: 800px;
 }
 
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: lightgray;
+}
+
 @keyframes homeLoad {
     from {
         transform: translateY(-80px);
