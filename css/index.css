@@ -17,6 +17,18 @@ nav .active {
     border-bottom: 2px solid white;
 }
 
+.backgroundImage {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(2px);
+    margin-left: -5px;
+}
+
 .logo {
     background-position: center center;
     background-repeat: no-repeat;
@@ -28,14 +40,83 @@ nav .active {
 }
 
 .home-main {
-    background: lightslategray;
-    height: 800px;
+    height: 900px;
 }
 
 .home-main .container {
-    background: pink;
     height: 300px;
     transform: translateY(250px);
+}
+
+.home-main h1 {
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0,0,0,.8);
+}
+
+.home-main .head2{
+    animation-play-state: running;
+    animation-delay: 1500ms;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-name: homeLoad2;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    background: rgba(2,148,0,.4);
+    transform: skew(-20deg);
+}
+
+.home-main h2 {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0,0,0,.8);
+    transform: skew(20deg);
+}
+
+.home-main button {
+    width: 250px;
+    height: 70px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+    margin-top: 40px;
+    opacity: 0;
+    transition: transform .8s;
+}
+
+.home-main button:hover {
+    transform: scale(1.1);
+}
+
+.home-main .btn-success {
+    background: rgb(2,148,0);
+    border-color: rgb(2,148,0);
+}
+
+.home-main .btn-success:hover {
+    background: rgb(0,118,0);
+    border-color: rgb(0,118,0);
+}
+
+.home-main .container {
+    animation-name: homeLoad;
+    animation-duration: 1500ms;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+.home-main button {
+    animation-name: buttonLoad;
+    animation-duration: 1500ms;
+    animation-delay: 1500ms;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+.home-main .btn2:hover {
+    background: gray;
 }
 
 .home-about {
@@ -98,10 +179,25 @@ nav .active {
 
 .home-skills .more {
     color: rgb(2,148,0);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 3px 2px rgba(0,0,0,0.2);
 }
 
-.home-skills .more:hover {
+.home-skills .arrow {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    transition: transform 1s;
+}
 
+.col-md:hover .arrow{
+    transform: scale(1.4);
 }
 
 .home-projects {
@@ -112,3 +208,33 @@ nav .active {
 .home-contact {
     height: 800px;
 }
+
+@keyframes homeLoad {
+    from {
+        transform: translateY(-80px);
+    }
+    to {
+        transform: translateY(250px);
+    }
+}
+
+@keyframes buttonLoad {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes homeLoad2 {
+    from {
+        transform: translateX(-250px) skew(-20deg);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(00px) skew(-20deg);
+        opacity: 1;
+    }
+}
+

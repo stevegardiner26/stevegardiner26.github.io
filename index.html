@@ -33,20 +33,21 @@
             </li>
         </ul>
     </nav>
+    <div class="backgroundImage" style="background-image: url('img/backgroundImage.jpg');"></div>
     <section class="row justify-content-center no-gutters home-main">
         <div class="container col-md-6">
             <div class="row no-gutters justify-content-center">
                 <h1>Steven Gardiner</h1>
             </div>
-            <div class="row no-gutters justify-content-center">
+            <div class="row no-gutters justify-content-center head2">
                 <h2 class="text-center">Front End Developer <br>     UI Design & Development</h2>
             </div>
             <div class="row no-gutters">
-                <div class="col-md-6 justify-content-center">
-                    <button class="btn">Contact Me</button>
+                <div class="col-md-6">
+                    <button class="btn btn2 mx-auto" style="display: block;" onclick="navTo('contact.html')">Contact Me</button>
                 </div>
                 <div class="col-md-6">
-                    <button class="btn btn-primary">Check Out Projects</button>
+                    <button class="btn btn-success mx-auto" style="display: block;" onclick="navTo('projects.html')">Check Out My Work</button>
                 </div>
             </div>
         </div>
@@ -63,16 +64,16 @@
             <div class="mx-auto profile-pic"></div>
         </div>
     </section>
-    <section class="row no-gutters home-testimonials">
+    <!--<section class="row no-gutters home-testimonials">
         Gallery of Testimonials
-    </section>
+    </section>-->
     <section class="row no-gutters home-skills">
         <div class="container-fluid">
             <div class="row no-gutters">
                 <h2 class="text-center mx-auto" style="margin-top: 20px;">Top Skills</h2>
             </div>
             <div class="row no-gutters">
-                <div class="col-md">
+                <div class="col-md" onclick="location.href='https://vuejs.org/'">
                     <div class="innerCard">
                         <div class="row no-gutters">
                             <img class="mx-auto" src="img/vuejs-logo.png" alt="VueJs" width="140" height="140">
@@ -95,15 +96,20 @@
                 <div class="col-md">
                     <div class="innerCard">
                         <div class="row no-gutters">
-                            <img class="mx-auto" src="img/sass.png" alt="Sass" width="140" height="140">
+                            <img class="mx-auto" src="img/css-logo.png" alt="CSS" width="140" height="140">
                         </div>
                         <div class="row no-gutters text-center">
-                            <h1 class="mx-auto">SASS</h1>
+                            <h1 class="mx-auto">CSS</h1>
                         </div>
                     </div>
                 </div>
-                <div class="col-md more">
-                    Click to See More!
+                <div class="col-md" onclick="skillMore()">
+                    <div class="more">
+                        Click to See More!
+                    </div>
+                    <div class="arrow mx-auto" style="background-image: url('img/arrw.png');">
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -190,4 +196,15 @@
     </footer>
 </div>
 </body>
+<script>
+    function skillMore() {
+        document.getElementsByClassName('arrow')[0].style.transform = "translateX(250px)";
+        setTimeout(function() {
+            location.href = "skills.html";
+        },800);
+    }
+    function navTo(locat) {
+        location.href = locat;
+    }
+</script>
 </html>
