@@ -240,6 +240,14 @@ nav .active {
     background-position: center;
 }
 
+.parallax {
+    background: no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+}
+
 @keyframes homeLoad {
     from {
         transform: translateY(-80px);
