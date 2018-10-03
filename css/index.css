@@ -22,11 +22,11 @@ nav .active {
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 10px;
     background-size: cover;
     z-index: -1;
-    filter: blur(2px);
-    margin-left: -5px;
+    filter: blur(0px);
+    margin-left: -10px;
 }
 
 .logo {
@@ -215,7 +215,7 @@ nav .active {
     background: whitesmoke;
     height: 650px;
     width: 90%;
-    box-shadow: 0px 5px 8px rgba(0,0,0,.3);
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, .3);
     border-radius: 3px;
 }
 
@@ -229,6 +229,7 @@ nav .active {
 }
 
 .home-contact .col-md-6, .home-contact .col-md-12 {
+    cursor: pointer;
     padding: 50px 10px;
 }
 
