@@ -33,7 +33,7 @@
             </li>
         </ul>
     </nav>
-    <div class="backgroundImage" style="background-image: url('img/backgroundImage.jpg');"></div>
+    <div class="backgroundImage" style="background-image: url('img/new-york-1745087_1920.jpg');"></div>
     <section class="row justify-content-center no-gutters home-main">
         <div class="container col-md-6">
             <div class="row no-gutters justify-content-center">
@@ -114,6 +114,9 @@
             </div>
         </div>
     </section>
+    <section class="row no-gutters parallax" style="background-image: url('img/backgroundImage.jpg')">
+        <h1 style="font-weight: bold; color: white; font-size: 80px ;text-transform: uppercase; text-align: center; text-shadow: 0 2px 5px #000; width: 100%; transform: translateY(150px); display: block;">Responsive and Reliable</h1></div>
+    </section>
     <section class="row no-gutters home-projects">
         <div class="col-md-8">
             <div class="container">
@@ -125,8 +128,61 @@
             <div class="mx-auto project-preview"></div>
         </div>
     </section>
-    <section class="row no-gutters home-contact">
-        <h1>Contact Me</h1>
+    <section class="row no-gutters home-contact" style="position: relative; overflow: hidden;">
+        <div class="row no-gutters" style="position: absolute; width: 100vw; overflow: hidden; top: -10px; left: -10px; height: 820px; filter: blur(5px); z-index: -1; background-image: url('img/new-york-1745087_1920.jpg'); background-attachment: fixed;"></div>
+        <div class="container mx-auto">
+            <div class="row">
+                <div class="col-md">
+                    <h1 class="text-center" style="padding: 5px;"><strong>Contact Me</strong></h1>
+                    <form action="" method="POST">
+                        <div class="form-group">
+                            <label for="">Name: </label>
+                            <input class="form-control" type="text" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Email:</label>
+                            <input class="form-control" type="email" placeholder="example@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="">What do you need?</label>
+                            <select name="" id="connection" class="form-control" required>
+                                <option value="create">Create a Website</option>
+                                <option value="lunch">Go for Lunch</option>
+                                <option value="edit">Edit a Website</option>
+                                <option value="ui">UI Design/Creation</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <small class="form-text text-muted">If none of these apply choose other and explain it in the message.</small>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="" id="" cols="30" rows="9" class="form-control" placeholder="Message..." required></textarea>
+                        </div>
+                        <button type="submit" style="margin-top: 20px; display: block;" class="mx-auto btn-success btn">Connect with Steve</button>
+                    </form>
+                </div>
+                <div class="col-md">
+                    <div class="row">
+                        <div class="col-md-12" id="linkedin" style="background: lightskyblue;" onclick="location.href='https://www.linkedin.com/in/steven-gardiner/'">
+                            <div class="mx-auto" style="background-image:url('img/linkedin-logo.png')"></div>
+                        </div>
+                        <div class="col-md-6" id="github" style="background: #ffffff;" onclick="location.href='https://github.com/stevegardiner26'">
+                            <div class="mx-auto" style="background-image:url('img/GitHub_Logo.png')"></div>
+                        </div>
+                        <div class="col-md-6" id="upwork" style="background: lightgreen;" onclick="location.href='https://www.upwork.com/o/profiles/users/_~01604c87965b6a6f64/'">
+                            <div class="mx-auto" style="background-image:url('img/upwork.png')"></div>
+                        </div>
+                        <div class="col-md-6" id="misc" style="background: #F77A62;">
+                            <div class="mx-auto" style="background-image:url('img/99.png')"></div>
+                        </div>
+                        <div class="col-md-6" id="email" style="background: white; padding: 20px 10px;">
+                            <a href="mailto:stevegardiner26@gmail.com">
+                                <div class="mx-auto" style="background-image:url('img/email.png'); height: 180px; width: 180px;"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <footer class="page-footer font-small blue pt-4" style="background: #5b5b5b; color: white;">
         <!-- Footer Links -->
