@@ -120,9 +120,9 @@ nav .active {
 }
 
 .home-about {
-    background: #333;
-    height: 500px;
-    color: white;
+    background: #ffffff;
+    height: 700px;
+    color: #333;
 }
 
 .home-about .profile-pic {
@@ -202,19 +202,27 @@ nav .active {
 }
 
 .home-projects {
-    height: 500px;
+    height: 90vh;
     background: #333;
     color: white;
 }
 
 .project-preview {
-    transform: translateY(100px);
     background: #ffffff;
-    height: 300px;
+    height: 500px;
     box-shadow: 0px 5px 8px rgba(0, 0, 0, .3);
     border-radius: 2px;
     padding: 0;
     cursor: pointer;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.home-projects .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .home-projects p, .home-projects ul {
