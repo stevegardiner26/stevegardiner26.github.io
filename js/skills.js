@@ -43,6 +43,14 @@ function searchSkills(val) {
 
 //Sorts by Skill Level via Select Dropdown
 function selectSkills(val) {
-    console.log(val)
-    
+    var pbar;
+    for(var i=0;i < cards.length;i++) {
+        pbar = cards[i].getElementsByClassName('progress-bar')[0];
+        if(val > (pbar.getAttribute('aria-valuenow')/10)){
+            cards[i].style.display = "none";
+        }
+        else {
+            cards[i].style.display = "inline-block";
+        }
+    }
 }
