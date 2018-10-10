@@ -24,3 +24,25 @@ $(".clickcard").click(function(){
     },500);
     $(this).toggleClass("flipped");
 });
+
+//Search Bar for Skills
+var cards = document.getElementsByClassName('card-container')[0].children;
+function searchSkills(val) {
+    var title = '';
+    var filter;
+    filter = val.toUpperCase();
+    for(var i=0;i < cards.length;i++){
+        title = cards[i].getElementsByClassName('titleA')[0].innerHTML;
+        if (title.toUpperCase().indexOf(filter) > -1) {
+            cards[i].style.display = "inline-block";
+        } else {
+            cards[i].style.display = "none";
+        }
+    }
+}
+
+//Sorts by Skill Level via Select Dropdown
+function selectSkills(val) {
+    console.log(val)
+    
+}
