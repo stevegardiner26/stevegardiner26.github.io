@@ -1,4 +1,75 @@
-section {
-    width: 100vw;
-    height: 100vh;
+.container-fluid {
+    position: relative;
+    height: 100%;
 }
+
+section {
+    height: 100%;
+}
+
+section .container {
+    margin-top: 62px;
+    max-width: 90vw;
+    min-height: 100vh;
+}
+
+section h1 {
+    padding: 20px 0px;
+}
+
+section hr {
+    height: 2px;
+    background: rgb(2,148,0);
+    width: 110%;
+    margin-left: -5%;
+}
+
+.card-container {
+    margin: 10px;
+    min-height: 100vh;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    height: 250px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.3);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0;
+    transform: skew(30deg);
+}
+
+.innerCard img {
+    transform: translateY(25px);
+}
+
+.card .label {
+    color: white;
+    text-shadow: 0px 0px 5px rgba(0,0,0,.5);
+    position: absolute;
+    right: -15px;
+    bottom: 25px;
+    background: rgba(2,148,0,.8);
+    width: 80%;
+    text-align: right;
+    padding-right: 35px;
+    transform: skew(-30deg);
+    transition: background-color 1s;
+}
+
+.card:hover .label{
+    background: rgba(2,148,0,1);
+}
+
+.card:hover .innerCard {
+    transform: scale(1.2);
+}
+
+
