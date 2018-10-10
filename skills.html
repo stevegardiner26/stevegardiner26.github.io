@@ -39,7 +39,21 @@
         <div class="container">
             <div class="row">
                 <h1>Skills</h1><br>
-                <input class="form-control" type="text" placeholder="Search...">
+            </div>
+            <div class="row">
+                    <div class="col-md-9">
+                        <input class="form-control" type="text" placeholder="Search...">
+                    </div>
+                    <div class="col-md-3">
+                        <select class="form-control" name="sort" id="skillSort">
+                            <option value="0">Sort by Skill Level</option>
+                            <option value="1">1+ (Novice)</option>
+                            <option value="3">3+</option>
+                            <option value="5">5+ (Intermediate)</option>
+                            <option value="8">8+</option>
+                            <option value="9">10 (Advanced)</option>
+                        </select>
+                    </div>
             </div>
             <hr>
             <div class="card-container">
@@ -56,6 +70,65 @@
                             </div>
                         </div>
                         <div class="back face">
+                            <div class="card-img" style="background-image: url('./img/vuejs-logo.png')"></div>
+                            <div class="card-body">
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="rank novice">Novice</p>
+                                <p class="rank inter">Intermediate</p>
+                                <p class="rank advance">Advanced</p>
+                                <h5 class="card-title" onclick="location.href='https://vuejs.org/'">VueJs</h5>
+                                <p class="card-text">Vue is a Javascript Framework similar to React & Angular, and my preferred framework.</p>
+                                <a href="./projects.html#vue" class="btn btn-success">See Projects with Vue</a>
+                                <p class="learned text-center">Learned on 9/5/18</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="clickcard">
+                        <div class="front face">
+                            <div class="innerCard">
+                                <div class="row no-gutters">
+                                    <img class="mx-auto" src="img/js-logo.png" alt="Js" width="175" height="175">
+                                </div>
+                            </div>
+                            <div class="label">
+                                <h1 class="">Javascript</h1>
+                            </div>
+                        </div>
+                        <div class="back face">
+                            <div class="card-img"></div>
+                            <div class="card-body">
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="rank novice">Novice</p>
+                                <p class="rank inter">Intermediate</p>
+                                <p class="rank advance">Advanced</p>
+                                <h5 class="card-title">Javascript</h5>
+                                <p class="card-text">Javascript is the language I use the most aside from CSS & HTML</p>
+                                <a href="./projects.html#js" class="btn btn-success">See Projects with JS</a>
+                                <p class="learned text-center">Learned on May '16</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="clickcard">
+                        <div class="front face">
+                            <div class="innerCard">
+                                <div class="row no-gutters">
+                                    <img class="mx-auto" src="img/vuejs-logo.png" alt="VueJs" width="175" height="175">
+                                </div>
+                            </div>
+                            <div class="label">
+                                <h1 class="">Vue Js</h1>
+                            </div>
+                        </div>
+                        <div class="back face">
+                            <div class="card-img" style="background-image: url('./img/vuejs-logo.png'); opacity:.3;"></div>
                             <div class="card-body">
                                 <div class="progress">
                                     <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
@@ -71,6 +144,327 @@
                         </div>
                     </div>
                 </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="clickcard">
+                        <div class="front face">
+                            <div class="innerCard">
+                                <div class="row no-gutters">
+                                    <img class="mx-auto" src="img/css-logo.png" alt="CSS3" width="175" height="175">
+                                </div>
+                            </div>
+                            <div class="label">
+                                <h1 class="">CSS3</h1>
+                            </div>
+                        </div>
+                        <div class="back face">
+                            <div class="card-img" style="background-image: url('./img/css-logo.png');"></div>
+                            <div class="card-body">
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="rank novice">Novice</p>
+                                <p class="rank inter">Intermediate</p>
+                                <p class="rank advance">Advanced</p>
+                                <h5 class="card-title">CSS3</h5>
+                                <p class="card-text">I have been using CSS for a long time and I am an expert.</p>
+                                <a href="./projects.html#css3" class="btn btn-success">See Projects with CSS3</a>
+                                <p class="learned text-center">Learned on Sept 2015</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="clickcard">
+                        <div class="front face">
+                            <div class="innerCard">
+                                <div class="row no-gutters">
+                                    <img class="mx-auto" src="img/HTML5_Logo_512.png" alt="HTML5" width="175" height="175">
+                                </div>
+                            </div>
+                            <div class="label">
+                                <h1 class="">HTML5</h1>
+                            </div>
+                        </div>
+                        <div class="back face">
+                            <div class="card-img" style="background-image: url('./img/HTML5_Logo_512.png');"></div>
+                            <div class="card-body">
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="rank novice">Novice</p>
+                                <p class="rank inter">Intermediate</p>
+                                <p class="rank advance">Advanced</p>
+                                <h5 class="card-title">HTML5</h5>
+                                <p class="card-text">HTML5 was my second language after Visual Basic</p>
+                                <a href="./projects.html#vue" class="btn btn-success">See Projects with HTML5</a>
+                                <p class="learned text-center">Learned on Sept 2015</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="clickcard">
+                        <div class="front face">
+                            <div class="innerCard">
+                                <div class="row no-gutters">
+                                    <img class="mx-auto" src="img/vuejs-logo.png" alt="VueJs" width="175" height="175">
+                                </div>
+                            </div>
+                            <div class="label">
+                                <h1 class="">Vue Js</h1>
+                            </div>
+                        </div>
+                        <div class="back face">
+                            <div class="card-img" style="background-image: url('./img/vuejs-logo.png'); opacity:.3;"></div>
+                            <div class="card-body">
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="rank novice">Novice</p>
+                                <p class="rank inter">Intermediate</p>
+                                <p class="rank advance">Advanced</p>
+                                <h5 class="card-title" onclick="location.href='https://vuejs.org/'">VueJs</h5>
+                                <p class="card-text">Vue is a Javascript Framework similar to React & Angular, and my preferred framework.</p>
+                                <a href="./projects.html#vue" class="btn btn-success">See Projects with Vue</a>
+                                <p class="learned text-center">Learned on 9/5/18</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="clickcard">
+                        <div class="front face">
+                            <div class="innerCard">
+                                <div class="row no-gutters">
+                                    <img class="mx-auto" src="img/vuejs-logo.png" alt="VueJs" width="175" height="175">
+                                </div>
+                            </div>
+                            <div class="label">
+                                <h1 class="">Vue Js</h1>
+                            </div>
+                        </div>
+                        <div class="back face">
+                            <div class="card-img" style="background-image: url('./img/vuejs-logo.png'); opacity:.3;"></div>
+                            <div class="card-body">
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="rank novice">Novice</p>
+                                <p class="rank inter">Intermediate</p>
+                                <p class="rank advance">Advanced</p>
+                                <h5 class="card-title" onclick="location.href='https://vuejs.org/'">VueJs</h5>
+                                <p class="card-text">Vue is a Javascript Framework similar to React & Angular, and my preferred framework.</p>
+                                <a href="./projects.html#vue" class="btn btn-success">See Projects with Vue</a>
+                                <p class="learned text-center">Learned on 9/5/18</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="clickcard">
+                        <div class="front face">
+                            <div class="innerCard">
+                                <div class="row no-gutters">
+                                    <img class="mx-auto" src="img/vuejs-logo.png" alt="VueJs" width="175" height="175">
+                                </div>
+                            </div>
+                            <div class="label">
+                                <h1 class="">Vue Js</h1>
+                            </div>
+                        </div>
+                        <div class="back face">
+                            <div class="card-img" style="background-image: url('./img/vuejs-logo.png'); opacity:.3;"></div>
+                            <div class="card-body">
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="rank novice">Novice</p>
+                                <p class="rank inter">Intermediate</p>
+                                <p class="rank advance">Advanced</p>
+                                <h5 class="card-title" onclick="location.href='https://vuejs.org/'">VueJs</h5>
+                                <p class="card-text">Vue is a Javascript Framework similar to React & Angular, and my preferred framework.</p>
+                                <a href="./projects.html#vue" class="btn btn-success">See Projects with Vue</a>
+                                <p class="learned text-center">Learned on 9/5/18</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="clickcard">
+                        <div class="front face">
+                            <div class="innerCard">
+                                <div class="row no-gutters">
+                                    <img class="mx-auto" src="img/vuejs-logo.png" alt="VueJs" width="175" height="175">
+                                </div>
+                            </div>
+                            <div class="label">
+                                <h1 class="">Vue Js</h1>
+                            </div>
+                        </div>
+                        <div class="back face">
+                            <div class="card-img" style="background-image: url('./img/vuejs-logo.png'); opacity:.3;"></div>
+                            <div class="card-body">
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="rank novice">Novice</p>
+                                <p class="rank inter">Intermediate</p>
+                                <p class="rank advance">Advanced</p>
+                                <h5 class="card-title" onclick="location.href='https://vuejs.org/'">VueJs</h5>
+                                <p class="card-text">Vue is a Javascript Framework similar to React & Angular, and my preferred framework.</p>
+                                <a href="./projects.html#vue" class="btn btn-success">See Projects with Vue</a>
+                                <p class="learned text-center">Learned on 9/5/18</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="clickcard">
+                        <div class="front face">
+                            <div class="innerCard">
+                                <div class="row no-gutters">
+                                    <img class="mx-auto" src="img/vuejs-logo.png" alt="VueJs" width="175" height="175">
+                                </div>
+                            </div>
+                            <div class="label">
+                                <h1 class="">Vue Js</h1>
+                            </div>
+                        </div>
+                        <div class="back face">
+                            <div class="card-img" style="background-image: url('./img/vuejs-logo.png'); opacity:.3;"></div>
+                            <div class="card-body">
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="rank novice">Novice</p>
+                                <p class="rank inter">Intermediate</p>
+                                <p class="rank advance">Advanced</p>
+                                <h5 class="card-title" onclick="location.href='https://vuejs.org/'">VueJs</h5>
+                                <p class="card-text">Vue is a Javascript Framework similar to React & Angular, and my preferred framework.</p>
+                                <a href="./projects.html#vue" class="btn btn-success">See Projects with Vue</a>
+                                <p class="learned text-center">Learned on 9/5/18</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="clickcard">
+                        <div class="front face">
+                            <div class="innerCard">
+                                <div class="row no-gutters">
+                                    <img class="mx-auto" src="img/vuejs-logo.png" alt="VueJs" width="175" height="175">
+                                </div>
+                            </div>
+                            <div class="label">
+                                <h1 class="">Vue Js</h1>
+                            </div>
+                        </div>
+                        <div class="back face">
+                            <div class="card-img" style="background-image: url('./img/vuejs-logo.png'); opacity:.3;"></div>
+                            <div class="card-body">
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="rank novice">Novice</p>
+                                <p class="rank inter">Intermediate</p>
+                                <p class="rank advance">Advanced</p>
+                                <h5 class="card-title" onclick="location.href='https://vuejs.org/'">VueJs</h5>
+                                <p class="card-text">Vue is a Javascript Framework similar to React & Angular, and my preferred framework.</p>
+                                <a href="./projects.html#vue" class="btn btn-success">See Projects with Vue</a>
+                                <p class="learned text-center">Learned on 9/5/18</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="clickcard">
+                        <div class="front face">
+                            <div class="innerCard">
+                                <div class="row no-gutters">
+                                    <img class="mx-auto" src="img/vuejs-logo.png" alt="VueJs" width="175" height="175">
+                                </div>
+                            </div>
+                            <div class="label">
+                                <h1 class="">Vue Js</h1>
+                            </div>
+                        </div>
+                        <div class="back face">
+                            <div class="card-img" style="background-image: url('./img/vuejs-logo.png'); opacity:.3;"></div>
+                            <div class="card-body">
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="rank novice">Novice</p>
+                                <p class="rank inter">Intermediate</p>
+                                <p class="rank advance">Advanced</p>
+                                <h5 class="card-title" onclick="location.href='https://vuejs.org/'">VueJs</h5>
+                                <p class="card-text">Vue is a Javascript Framework similar to React & Angular, and my preferred framework.</p>
+                                <a href="./projects.html#vue" class="btn btn-success">See Projects with Vue</a>
+                                <p class="learned text-center">Learned on 9/5/18</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="clickcard">
+                        <div class="front face">
+                            <div class="innerCard">
+                                <div class="row no-gutters">
+                                    <img class="mx-auto" src="img/vuejs-logo.png" alt="VueJs" width="175" height="175">
+                                </div>
+                            </div>
+                            <div class="label">
+                                <h1 class="">Vue Js</h1>
+                            </div>
+                        </div>
+                        <div class="back face">
+                            <div class="card-img" style="background-image: url('./img/vuejs-logo.png'); opacity:.3;"></div>
+                            <div class="card-body">
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="rank novice">Novice</p>
+                                <p class="rank inter">Intermediate</p>
+                                <p class="rank advance">Advanced</p>
+                                <h5 class="card-title" onclick="location.href='https://vuejs.org/'">VueJs</h5>
+                                <p class="card-text">Vue is a Javascript Framework similar to React & Angular, and my preferred framework.</p>
+                                <a href="./projects.html#vue" class="btn btn-success">See Projects with Vue</a>
+                                <p class="learned text-center">Learned on 9/5/18</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="clickcard">
+                        <div class="front face">
+                            <div class="innerCard">
+                                <div class="row no-gutters">
+                                    <img class="mx-auto" src="img/vuejs-logo.png" alt="VueJs" width="175" height="175">
+                                </div>
+                            </div>
+                            <div class="label">
+                                <h1 class="">Vue Js</h1>
+                            </div>
+                        </div>
+                        <div class="back face">
+                            <div class="card-img" style="background-image: url('./img/vuejs-logo.png'); opacity:.3;"></div>
+                            <div class="card-body">
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="rank novice">Novice</p>
+                                <p class="rank inter">Intermediate</p>
+                                <p class="rank advance">Advanced</p>
+                                <h5 class="card-title" onclick="location.href='https://vuejs.org/'">VueJs</h5>
+                                <p class="card-text">Vue is a Javascript Framework similar to React & Angular, and my preferred framework.</p>
+                                <a href="./projects.html#vue" class="btn btn-success">See Projects with Vue</a>
+                                <p class="learned text-center">Learned on 9/5/18</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
