@@ -156,7 +156,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="176" />
     <option name="y" value="-15" />
     <option name="width" value="1400" />
@@ -227,7 +227,7 @@
       <workItem from="1538140685392" duration="10417000" />
       <workItem from="1538253671849" duration="20344000" />
       <workItem from="1538574641174" duration="20302000" />
-      <workItem from="1539181031881" duration="12623000" />
+      <workItem from="1539181031881" duration="13704000" />
     </task>
     <servers />
   </component>
