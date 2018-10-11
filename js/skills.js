@@ -54,3 +54,21 @@ function selectSkills(val) {
         }
     }
 }
+
+$(document).ready(function() {
+    animateCards();
+});
+
+function animateCards() {
+    var i = 0;
+    function loop() {
+        setTimeout(function () {
+            cards[i].style.transform = "translateY(0px)";
+            i++;
+            if (i < cards.length) {
+                loop();
+            }
+        }, 100)
+    }
+    loop();
+}
