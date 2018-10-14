@@ -53,6 +53,15 @@ section hr {
     transform: translateY(25px);
 }
 
+.card .img {
+    width: 175px;
+    height: 175px;
+    -webkit-background-size: contain;
+    background-size: contain;
+    transform: translateY(25px);
+    background: center no-repeat;
+}
+
 .card .label {
     color: white;
     text-shadow: 0px 0px 5px rgba(0,0,0,.5);
@@ -219,3 +228,6 @@ section hr {
     opacity: .1;
 }
 
+.card-title {
+    width: 50%;
+}
