@@ -231,3 +231,12 @@ section hr {
 .card-title {
     width: 50%;
 }
+
+.main-img {
+    transform: translateY(25px);
+    width: 175px;
+    height: 175px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
