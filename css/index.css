@@ -120,7 +120,7 @@ nav .active {
 }
 
 .home-about {
-    background: #ffffff;
+    background: lightgray;
     height: 700px;
     color: #333;
 }
@@ -151,7 +151,7 @@ nav .active {
 .home-skills .col-md{
     height: 200px;
     margin: 50px 30px;
-    background: white;
+    background: lightgray;
     box-shadow: 0px 5px 10px rgba(0,0,0,.3);
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
