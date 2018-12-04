@@ -1,0 +1,83 @@
+section {
+    position: relative;
+    padding-top: 80px;
+    height: 800px;
+    background: lightgray;
+}
+
+.background-fade {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .1;
+    top: 0;
+    left: 0;
+    background-image: url("../img/abstract-2384_1920.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+hr {
+    border-top: 2px solid;
+    height: 2px;
+    color: rgb(2,148,0);
+}
+
+#submit {
+    background: rgb(2,148,0);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.socialBtn {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 3px;
+    background: rgba(255,255,255,.4);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    padding: 5px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,.4);
+    transition: transform .2s;
+}
+
+.linkedIn {
+    left: 20px;
+    top: 25%;
+    transform: translateY(-25%);
+    background-image: url("../img/linkedin-logo.png");
+}
+
+.linkedIn:hover, .email:hover {
+    transform: translateY(-25%) scale(1.1);
+}
+
+.github:hover, .upwork:hover {
+    transform: translateY(-75%) scale(1.1);
+}
+
+.github {
+    left: 20px;
+    top: 75%;
+    transform: translateY(-75%);
+    background-image: url("../img/25231.png");
+}
+
+.email {
+    right: 20px;
+    top: 25%;
+    transform: translateY(-25%);
+    background-image: url("../img/email.png");
+}
+
+.upwork {
+    right: 20px;
+    top: 75%;
+    transform: translateY(-75%);
+    background-image: url("../img/upwork.png");
+}

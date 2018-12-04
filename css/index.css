@@ -17,6 +17,14 @@ nav .active {
     border-bottom: 2px solid white;
 }
 
+.bg-dark2 {
+    background-image: linear-gradient(to bottom, lightgray -105%, #343a40);
+}
+
+/*.footer-copyright {
+    background-image: linear-gradient(to top, lightgray -175%, #333) !important;
+}*/
+
 .backgroundImage {
     position: fixed;
     width: 100vw;

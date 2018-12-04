@@ -1,0 +1,9 @@
+section {
+    position: relative;
+    height: auto;
+    padding-top: 60px;
+}
+
+section h5, section h1 {
+    padding-left: 15px;
+}
