@@ -12,7 +12,7 @@ section {
     opacity: .1;
     top: 0;
     left: 0;
-    background-image: url("../img/abstract-2384_1920.jpg");
+    background-image: url("../resources/img/abstract-2384_1920.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -50,7 +50,7 @@ hr {
     left: 20px;
     top: 25%;
     transform: translateY(-25%);
-    background-image: url("../img/linkedin-logo.png");
+    background-image: url("../resources/img/linkedin-logo.png");
 }
 
 .linkedIn:hover, .email:hover {
@@ -65,19 +65,19 @@ hr {
     left: 20px;
     top: 75%;
     transform: translateY(-75%);
-    background-image: url("../img/25231.png");
+    background-image: url("../resources/img/25231.png");
 }
 
 .email {
     right: 20px;
     top: 25%;
     transform: translateY(-25%);
-    background-image: url("../img/email.png");
+    background-image: url("../resources/img/email.png");
 }
 
 .upwork {
     right: 20px;
     top: 75%;
     transform: translateY(-75%);
-    background-image: url("../img/upwork.png");
+    background-image: url("../resources/img/upwork.png");
 }
