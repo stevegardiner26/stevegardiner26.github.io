@@ -1,11 +1,101 @@
 section {
     position: relative;
     height: auto;
-    padding-top: 60px;
+    padding-top: 80px;
+    padding-bottom: 30px;
 }
 
 section h5, section h1 {
     padding-left: 15px;
 }
 
+.card {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+}
+
+.header {
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 1150px;
+}
+
+.card-container {
+    width: 1135px;
+}
+
+.title {
+    margin: 5px 20px;
+}
+
+.courseLink {
+    float: right;
+    color: green;
+    text-decoration: underline;
+}
+
+.card-text  {
+    margin-bottom: 0px;
+}
+
+.card-body {
+    padding-top: 0px;
+}
+
+.learned {
+    margin-top: 15px;
+}
+
+.title {
+    padding: 10px 0px;
+}
+
+.syntaxes i {
+    color: green;
+}
+
+.syntaxes {
+    margin-bottom: 0px;
+}
+
+.inProgress {
+    color: gold;
+}
+
+.card .card-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 80%;
+    height: 80%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: .2;
+    z-index: 1;
+}
+
+.label, .card-body {
+    z-index: 2;
+}
+
+#course-body-njit .card .card-img {
+    background-image: url('../resources/img/njit.png');
+}
+
+#course-body-udemy .card .card-img {
+    background-image: url('../resources/img/udemy.png');
+}
+
+#course-body-codecademy .card .card-img {
+    background-image: url('../resources/img/codecademy_logo_detail.png');
+}
+
+#course-body-tuts .card .card-img {
+    background-image: url('../resources/img/envato.png');
+}
 
