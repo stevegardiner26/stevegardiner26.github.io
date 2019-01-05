@@ -1,0 +1,41 @@
+/* 728 x 90 ad */
+.fakeadspace {
+    position: absolute;
+    display: flex;
+    flex-flow: row nowrap;
+    background: lightgray;
+    border: 1px solid rgba(0,0,0,.2);
+}
+
+.logo {
+    background-image: url('../resources/img/logo.png');
+    width: 90px;
+    height: 100%;
+}
+
+.msg {
+    font-size: 35px;
+    line-height: 90px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.cta {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: rgba(2,148,0,1);
+    height: 30px;
+    line-height: 18px;
+    font-weight: bold;
+    padding: 5px 15px;
+    color: #ffffff;
+    font-size: 24px;
+    margin-left: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.cta:hover {
+    background: rgba(2,148,0,.8);
+}
