@@ -42,6 +42,10 @@ button {
     cursor: pointer;
 }
 
+hr {
+    background: rgb(2,148,0);
+}
+
 .fa-instagram {
     padding: 10px;
     font-size: 40px !important;
