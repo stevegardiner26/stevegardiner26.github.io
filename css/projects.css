@@ -1,0 +1,54 @@
+section {
+    padding-top: 80px;
+    height: auto;
+}
+
+h1 {
+    margin-left: 20px;
+    margin-bottom: 60px;
+}
+
+.category {
+    position: relative;
+    border-radius: 5px;
+    margin: 10px 20px;
+    height: 250px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    border: 1px solid rgba(0,0,0,.2);
+}
+
+.cat {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+    margin: 0;
+    width: 90%;
+}
+
+.category p {
+    top: 55%;
+}
+
+.category:hover {
+    box-shadow: 2px 2px 5px rgba(2,148,0,.5);
+}
+
+.row {
+    margin: 40px 0px;
+}
+
+.container-fluid {
+    position: relative;
+}
+
+.fakeadspace {
+    background: #000;
+    width: 728px;
+    height: 90px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+}
