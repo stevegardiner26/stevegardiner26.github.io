@@ -36,25 +36,40 @@
     </nav>
 
     <section>
-        <div class="container">
+        <div class="container projectLists">
             <div class="row">
-                <h1 style="margin-left: 15px;">Projects</h1>
+                <h1 style="margin-left: 15px; margin-bottom: 35px">Projects</h1>
             </div>
             <div class="row">
                 <div class="col-md-2">
                     <div class="nav flex-column nav-pills myTab" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <input type="text" placeholder="Search" class="form-control">
-                        <a class="st nav-link" id="v-pills-websites-tab" data-toggle="pill" href="#v-pills-websites" role="tab" aria-controls="v-pills-websites" aria-selected="false">Websites</a>
-                        <a class="st nav-link" id="v-pills-ui-tab" data-toggle="pill" href="#v-pills-ui" role="tab" aria-controls="v-pills-ui" aria-selected="false">User Interfaces</a>
-                        <a class="st nav-link" id="v-pills-ads-tab" data-toggle="pill" href="#v-pills-ads" role="tab" aria-controls="v-pills-ads" aria-selected="false">Ad Formats</a>
-                        <a class="st nav-link" id="v-pills-tutorials-tab" data-toggle="pill" href="#v-pills-tutorials" role="tab" aria-controls="v-pills-tutorials" aria-selected="false">Tutorial Projects</a>
-                        <a class="st nav-link" id="v-pills-other-tab" data-toggle="pill" href="#v-pills-other" role="tab" aria-controls="v-pills-other" aria-selected="false">Other Projects</a>
+                        <a onclick="showWebsites();" class="st nav-link" id="v-pills-websites-tab" data-toggle="pill" href="#v-pills-websites" role="tab" aria-controls="v-pills-websites" aria-selected="false">Websites</a>
+                        <a onclick="showUI();" class="st nav-link" id="v-pills-ui-tab" data-toggle="pill" href="#v-pills-ui" role="tab" aria-controls="v-pills-ui" aria-selected="false">User Interfaces</a>
+                        <a onclick="showADS();" class="st nav-link" id="v-pills-ads-tab" data-toggle="pill" href="#v-pills-ads" role="tab" aria-controls="v-pills-ads" aria-selected="false">Ad Formats</a>
+                        <a onclick="showTutorials();" class="st nav-link" id="v-pills-tutorials-tab" data-toggle="pill" href="#v-pills-tutorials" role="tab" aria-controls="v-pills-tutorials" aria-selected="false">Tutorial Projects</a>
+                        <a onclick="showOther();" class="st nav-link" id="v-pills-other-tab" data-toggle="pill" href="#v-pills-other" role="tab" aria-controls="v-pills-other" aria-selected="false">Other Projects</a>
                     </div>
                 </div>
                 <div class="col-md-10">
                     <div class="tab-content myTab" id="v-pills-tabContent">
-                        <div class="tab-pane fade" id="v-pills-websites" role="tabpanel" aria-labelledby="v-pills-websites-tab">
-                            ...
+                        <div class="tab-pane fade entry-container" id="v-pills-websites" role="tabpanel" aria-labelledby="v-pills-websites-tab">
+                            <div class="row entry">
+                                <div class="col-md-4 preview-img"></div>
+                                <div class="col-md-8 details">
+                                    <div class="title">
+                                        <h3>Title of Advertisement</h3>
+                                    </div>
+                                    <div class="description">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    </div>
+                                    <div class="languages row">
+                                        <i>Javascript</i>
+                                        <i>Javascript</i>
+                                        <i>Javascript</i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-ui" role="tabpanel" aria-labelledby="v-pills-ui-tab">
                             ..3213.
@@ -69,6 +84,20 @@
                             ...
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="container singleProject" style="display: none;">
+            <div class="row">
+                <h1 style="margin-left: 15px;">Projects</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                    <button class="btn btn-success backButton" onclick="location.href = './project-menu.html#websites'; document.location.reload();">< Back</button>
+                </div>
+                <div class="col-md-11">
+                    <h2>Title of Project</h2>
+
                 </div>
             </div>
         </div>
@@ -142,4 +171,5 @@
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script type="text/javascript" src="./js/project-nav.js"></script>
+<script type="text/javascript" src="./js/projectsList.js"></script>
 </html>
