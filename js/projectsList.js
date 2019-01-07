@@ -68,6 +68,7 @@ function showWebsites() {
     for (var i = 0; i < websitesDB.length; i++) {
         entry = document.createElement('div');
         entry.classList.add('row', 'entry');
+        entry.setAttribute('onclick', 'location.href = \'./project-menu.html#web-' + i + '\';document.location.reload();');
         entry.innerHTML = '<div class="col-md-4 preview-img" style="background-image: url(' + websitesDB[i].previewImg + ') "></div>\n' +
             '                                <div class="col-md-8 details">\n' +
             '                                    <div class="title">\n' +
@@ -91,6 +92,31 @@ function showWebsites() {
 
 function showUI() {
     location.href='./project-menu.html#ui';
+    cont = document.getElementById('v-pills-ui');
+    cont.innerHTML = '';
+    for (var i = 0; i < userInterfacesDB.length; i++) {
+        entry = document.createElement('div');
+        entry.classList.add('row', 'entry');
+        entry.setAttribute('onclick', 'location.href = \'./project-menu.html#ui-' + i + '\';document.location.reload();');
+        entry.innerHTML = '<div class="col-md-4 preview-img" style="background-image: url(' + userInterfacesDB[i].previewImg + ') "></div>\n' +
+            '                                <div class="col-md-8 details">\n' +
+            '                                    <div class="title">\n' +
+            '                                        <h3>' + userInterfacesDB[i].title + '</h3>\n' +
+            '                                    </div>\n' +
+            '                                    <div class="description">\n' +
+            '                                        <p>' + userInterfacesDB[i].shortDesc + '</p>\n' +
+            '                                    </div>\n' +
+            '                                    <div class="languages row">\n' +
+            '                                    </div>\n' +
+            '                                </div>';
+        langCont = entry.getElementsByClassName('languages')[0];
+        for(var v = 0; v < userInterfacesDB[i].languages.length; v++) {
+            langEl = document.createElement('i');
+            langEl.innerHTML = userInterfacesDB[i].languages[v] + ' ';
+            langCont.appendChild(langEl);
+        }
+        cont.appendChild(entry);
+    }
 }
 
 function showADS() {
