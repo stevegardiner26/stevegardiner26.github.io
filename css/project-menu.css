@@ -1,0 +1,31 @@
+section {
+    height: 800px;
+    padding-top: 80px;
+}
+
+.st {
+    color: rgb(2,148,0);
+    margin: 10px 0px;
+}
+
+section .nav-link:hover {
+    color: #333;
+}
+
+section .nav-link:active {
+    background: rgb(2, 148, 0);
+    color: white;
+}
+
+section .nav .active {
+    background: rgb(2, 148, 0) !important;
+    color: white !important;
+}
+
+section .myTab {
+    transform: translateY(20%);
+}
+
+.tab-content {
+    height: 400px;
+}
