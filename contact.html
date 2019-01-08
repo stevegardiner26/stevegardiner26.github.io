@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="resources/img/logo.png" />
 </head>
 <body>
@@ -46,13 +47,28 @@
                     <form action="mailto:stevegardiner26@gmail.com?Subject=Freelance%20Inquiry">
                         <br>
                         <label for="name">Name:</label>
-                        <input id="name" type="text" class="form-control">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-name"><i class="fa fa-user fa-fw"></i></span>
+                            </div>
+                            <input id="name" type="text" class="form-control">
+                        </div>
                         <br>
                         <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-email"><i class="fa fa-envelope fa-fw"></i></span>
+                            </div>
+                            <input type="email" class="form-control" id="email">
+                        </div>
                         <br>
                         <label for="message">Message:</label>
-                        <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-message"><i class="fa fa-comment fa-fw"></i></span>
+                            </div>
+                            <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
+                        </div>
                         <br>
                         <input type="submit" class="form-control" id="submit">
                     </form>
