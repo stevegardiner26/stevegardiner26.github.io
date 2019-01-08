@@ -53,7 +53,7 @@ footer {
     margin-right: 10px;
 }
 
-.arrow {
+.arrow2 {
     width: 60px !important;
 }
 
@@ -216,7 +216,7 @@ footer {
     text-shadow: 0px 2px 2px rgba(0,0,0,0.5);
 }
 
-.home-skills .arrow {
+.home-skills .arrow2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -226,7 +226,7 @@ footer {
     transition: transform 1s;
 }
 
-.col-md:hover .arrow{
+.col-md:hover .arrow2{
     transform: scale(1.4);
 }
 
