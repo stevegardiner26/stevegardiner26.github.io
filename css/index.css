@@ -157,9 +157,10 @@ footer {
 .home-about .profile-pic {
     width: 300px;
     height: 300px;
-    background: #000;
     border-radius: 50%;
     transform: translateY(100px);
+    background: url("../resources/img/me.jpg") center center no-repeat;
+    background-size: cover;
 }
 
 .home-about .container {
