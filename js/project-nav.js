@@ -23,6 +23,11 @@ function navCategory(category) {
 
 function navCategoryPost() {
     var locat = location.href.substring(location.href.lastIndexOf('#') + 1);
+    var sublocat;
+    if(locat.substring(0,6) === 'search') {
+        sublocat = locat;
+        locat = 'search';
+    }
     switch  (locat){
         case 'websites':
             $('#v-pills-websites-tab').addClass('active');
@@ -58,6 +63,21 @@ function navCategoryPost() {
             $('#v-pills-other').addClass('active');
             $('#v-pills-other').addClass('show');
             showOther();
+            break;
+        case 'search':
+            $('#v-pills-all-tab').addClass('active');
+            $('#v-pills-all-tab').attr('aria-selected', 'true');
+            $('#v-pills-all').addClass('active');
+            $('#v-pills-all').addClass('show');
+            $('.projectSearch')[0].setAttribute('value', (sublocat.substring(7) + ''));
+            showSearch(sublocat.substring(7));
+            break;
+        case 'all':
+            $('#v-pills-all-tab').addClass('active');
+            $('#v-pills-all-tab').attr('aria-selected', 'true');
+            $('#v-pills-all').addClass('active');
+            $('#v-pills-all').addClass('show');
+            showAll();
             break;
         default:
             $('.projectLists').hide();
