@@ -20,7 +20,9 @@ var websitesDB = [
         media: [
             '<div class="mediaImg" style="background-image: url(' + './resources/img/projectPreview.PNG' + ')"></div>',
             '<video class="mediaVid" controls src="./resources/vid/dedicatedDebator.mp4"></video>',
-        ]
+        ],
+        dateStart: 'November 2018',
+        dateEnd: 'November 2018',
     },
     {
         title: 'Coastal Kombi',
@@ -116,6 +118,8 @@ function loadSingleProject() {
     }
     $('.mediaDump')[0].innerHTML = tempmedia;
 
+    $('.dateComplete')[0].innerHTML = currentDB[id].dateEnd;
+    $('.dateBegan')[0].innerHTML = currentDB[id].dateStart;
 }
 
 var cont, entry, langCont, langEl;

@@ -124,7 +124,7 @@ section .nav .active {
     border-radius: 4px;
     box-shadow: 2px 2px 5px rgba(0,0,0,.5);
     width: 98%;
-    margin: auto;
+    margin: 0px auto 15px auto;
     height: 250px;
     background-size: cover !important;
     background: center center no-repeat;
@@ -132,4 +132,14 @@ section .nav .active {
 
 .mediaDump {
     margin-top: 40px !important;
+}
+
+.dateComplete:before {
+    content: 'Date Finished: ';
+    font-weight: bold;
+}
+
+.dateBegan:before {
+    content: 'Date Started: ';
+    font-weight: bold;
 }
