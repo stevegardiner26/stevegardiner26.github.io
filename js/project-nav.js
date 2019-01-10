@@ -82,7 +82,7 @@ function navCategoryPost() {
         default:
             $('.projectLists').hide();
             $('.singleProject').show();
-            /*location.href = './projects.html#' + locat;*/
+            loadSingleProject();
             break;
     }
 }

@@ -12,6 +12,15 @@ var websitesDB = [
             'php',
         ],
         previewImg: './resources/img/projects/websites/dd.PNG',
+        longDetails: 'lorem longer details',
+        links: [
+            '<a href="http://coastal-kombi.herokuapp.com/">Click Here to Visit a Demo of the Site</a>',
+            '<a href="http://coastal-kombi.herokuapp.com/">Click Here to Visit a Demo of the Site</a>'
+        ],
+        media: [
+            '<div class="mediaImg" style="background-image: url(' + './resources/img/projectPreview.PNG' + ')"></div>',
+            '<video class="mediaVid" controls src="./resources/vid/dedicatedDebator.mp4"></video>',
+        ]
     },
     {
         title: 'Coastal Kombi',
@@ -59,6 +68,55 @@ var otherDB = [
 
 ];
 
+function loadSingleProject() {
+    var locat = location.href.substring(location.href.lastIndexOf('#') + 1);
+    var locatsplit = locat.split('-');
+    var currentDB, id;
+    switch (locatsplit[0]){
+        case 'web':
+            currentDB = websitesDB;
+            break;
+        case 'ui':
+            currentDB = userInterfacesDB;
+            break;
+        case 'ads':
+            currentDB = adFormatsDB;
+            break;
+        case 'tutorial':
+            currentDB = tutorialsDB;
+            break;
+        case 'other':
+            currentDB = otherDB;
+            break;
+    }
+    id = locatsplit[1];
+
+    //Now to populate the fields
+    $('.singleTitle')[0].innerHTML = currentDB[id].title;
+    $('.shortDesc')[0].innerHTML = currentDB[id].shortDesc;
+    $('.longDetails')[0].innerHTML = currentDB[id].longDetails;
+    $('.mainImg')[0].style.backgroundImage = 'url(' + currentDB[id].previewImg + ')';
+
+    //inserting links
+    var templinks = '';
+    for(var i = 0; i < currentDB[id].links.length; i++) {
+        templinks += currentDB[id].links[i] + '<br>';
+    }
+    $('.singleLinks')[0].innerHTML = templinks;
+
+    for(var v = 0; v < currentDB[id].languages.length; v++) {
+        let templang = document.createElement('i');
+        templang.innerHTML = currentDB[id].languages[v];
+        $('.singleLanguages')[0].appendChild(templang);
+    }
+
+    var tempmedia = '';
+    for(var m = 0; m < currentDB[id].media.length; m++) {
+        tempmedia += currentDB[id].media[m] + '<br>';
+    }
+    $('.mediaDump')[0].innerHTML = tempmedia;
+
+}
 
 var cont, entry, langCont, langEl;
 function showWebsites() {
