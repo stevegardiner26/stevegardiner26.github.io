@@ -41,7 +41,7 @@ section .nav .active {
 }
 
 .entry {
-    margin: 15px 15px;
+    margin: 30px 15px;
     border: 1px solid rgba(0,0,0,.2);
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0,0,0,.4);
@@ -108,6 +108,7 @@ section .nav .active {
     margin: auto;
     height: 300px;
     background: center center no-repeat;
+    background-size: cover !important;
     box-shadow: 3px 3px 5px rgba(0,0,0,.3);
     border: 1px solid rgba(0,0,0,.3);
 }

@@ -1,24 +1,30 @@
+//50 Word Limit for Short Desc
+//Unlimited for LongDetails
 var websitesDB = [
     {
         title: 'Dedicated Debator',
-        shortDesc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ' +
-            'the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type ' +
-            'and scrambled it to make a type specimen book.',
+        shortDesc: 'A website that users can anonymously log into a chat room based off of a discussion issue and connect with people' +
+            'to debate issues. The goal of this project was to bring people closer together by letting them exchange views and maybe people could' +
+            'find common ground.',
         languages: [
             'javascript',
             'html5',
             'css3',
             'jquery',
             'php',
+            'heroku',
         ],
         previewImg: './resources/img/projects/websites/dd.PNG',
-        longDetails: 'lorem longer details',
+        longDetails: 'This project was created at a 24 hour NJIT hackathon run by Major League Hacking and was created within the time block. The main goal of my creation' +
+            'for this site was so that I could learn backend php and reteach myself heroku two skills which I find very useful to this day.' +
+            'The frontend of the site was simply a bootstrap template because I knew frontend at the time and knew I was going to have to spend all my time on backend' +
+            'to complete the project within the timeline.',
         links: [
-            '<a href="http://coastal-kombi.herokuapp.com/">Click Here to Visit a Demo of the Site</a>',
-            '<a href="http://coastal-kombi.herokuapp.com/">Click Here to Visit a Demo of the Site</a>'
+            '<a href="http://dedicated-debator.herokuapp.com/">Click Here to Visit a Demo of the Site</a>',
+            '<a href="https://github.com/stevegardiner26/Dedicated-Debator">Click Here to Visit the Github Repository</a>'
         ],
         media: [
-            '<div class="mediaImg" style="background-image: url(' + './resources/img/projectPreview.PNG' + ')"></div>',
+            '<div class="mediaImg" style="background-image: url(' + './resources/img/projects/websites/dedicatedHome.PNG' + ')"></div>',
             '<video class="mediaVid" controls src="./resources/vid/dedicatedDebator.mp4"></video>',
         ],
         dateStart: 'November 2018',
@@ -26,9 +32,33 @@ var websitesDB = [
     },
     {
         title: 'Coastal Kombi',
-        shortDesc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ' +
-            'the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type ' +
-            'and scrambled it to make a type specimen book.',
+        shortDesc: 'A simple single page landing page for the coastal kombi.',
+        languages: [
+            'javascript',
+            'heroku',
+            'html5',
+            'css3',
+            'jquery',
+            'bootstrap 4',
+        ],
+        previewImg: './resources/img/projects/websites/coastal.PNG',
+        longDetails: '',
+        links: [
+            '<a href="http://coastal-kombi.herokuapp.com/">Click Here to Visit a Demo of the Site</a>',
+        ],
+        media: [
+            '<video class="mediaVid" controls src="./resources/vid/coastal-kombi.mp4"></video>',
+        ],
+        dateStart: 'September 2018',
+        dateEnd: 'Still Under Development',
+    }
+];
+
+var userInterfacesDB = [
+    {
+        title: 'Mineral Transport UI',
+        shortDesc: 'This is a User Interface created to be used inside Grand Theft Auto V. It is intended for players' +
+            ' to select a truck and and then start the job, which would exit the UI and give them the proper truck.',
         languages: [
             'javascript',
             'html5',
@@ -36,11 +66,16 @@ var websitesDB = [
             'jquery',
             'bootstrap 4',
         ],
-        previewImg: './resources/img/projects/websites/coastal.PNG',
-    }
-];
-
-var userInterfacesDB = [
+        previewImg: './resources/img/projects/userInterfaces/mineral.PNG',
+        longDetails: 'lorem longer details',
+        links: [
+        ],
+        media: [
+            '<video class="mediaVid" controls src="./resources/vid/dedicatedDebator.mp4"></video>',
+        ],
+        dateStart: 'September 2018',
+        dateEnd: 'September 2018',
+    },
     {
         title: 'Mineral Transport UI',
         shortDesc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ' +
@@ -54,6 +89,17 @@ var userInterfacesDB = [
             'bootstrap 4',
         ],
         previewImg: './resources/img/projects/userInterfaces/mineral.PNG',
+        longDetails: 'lorem longer details',
+        links: [
+            '<a href="http://coastal-kombi.herokuapp.com/">Click Here to Visit a Demo of the Site</a>',
+            '<a href="http://coastal-kombi.herokuapp.com/">Click Here to Visit a Demo of the Site</a>'
+        ],
+        media: [
+            '<div class="mediaImg" style="background-image: url(' + './resources/img/projectPreview.PNG' + ')"></div>',
+            '<video class="mediaVid" controls src="./resources/vid/dedicatedDebator.mp4"></video>',
+        ],
+        dateStart: 'September 2018',
+        dateEnd: 'Still Under Development',
     }
 
 ];
@@ -105,6 +151,10 @@ function loadSingleProject() {
         templinks += currentDB[id].links[i] + '<br>';
     }
     $('.singleLinks')[0].innerHTML = templinks;
+
+    if(currentDB[id].links.length == 0) {
+        $('.linkHead')[0].style.display = 'none';
+    }
 
     for(var v = 0; v < currentDB[id].languages.length; v++) {
         let templang = document.createElement('i');
@@ -179,7 +229,7 @@ function showSearch(value) {
                 temp.childNodes[v].style.display = 'none';
             }
         }
-        for(var q = 0; q < temp.children.length; q++) {
+        for(var q = 0; q < temp.children.length; q++) { //TODO: Fix this is doesnt work properly
             if(temp.children[q].style.display == 'none') {
                 document.getElementsByClassName('noSearch')[0].style.display = 'block';
             } else {
