@@ -32,7 +32,8 @@ var websitesDB = [
     },
     {
         title: 'Coastal Kombi',
-        shortDesc: 'A simple single page landing page for the coastal kombi.',
+        shortDesc: 'A simple single page landing page for the coastal kombi. Fully Dynamic and Responsive. This project includes a virtual tour of the van' +
+            'which allows a user to click certain features of the van and it changes the picture of the van.',
         languages: [
             'javascript',
             'heroku',
@@ -71,13 +72,12 @@ var userInterfacesDB = [
         links: [
         ],
         media: [
-            '<video class="mediaVid" controls src="./resources/vid/dedicatedDebator.mp4"></video>',
         ],
         dateStart: 'September 2018',
         dateEnd: 'September 2018',
     },
     {
-        title: 'Mineral Transport UI',
+        title: 'Template UI',
         shortDesc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ' +
             'the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type ' +
             'and scrambled it to make a type specimen book.',
