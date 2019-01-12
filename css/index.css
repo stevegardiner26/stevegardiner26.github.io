@@ -370,3 +370,10 @@ footer a:hover {
     }
 }
 
+.cnt:hover .cnt div {
+    transform: scale(1.2);
+}
+
+.cnt:hover {
+    opacity: .8;
+}
