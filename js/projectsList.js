@@ -77,30 +77,80 @@ var userInterfacesDB = [
         dateEnd: 'September 2018',
     },
     {
-        title: 'Template UI',
-        shortDesc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ' +
-            'the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type ' +
-            'and scrambled it to make a type specimen book.',
+        title: 'Player List UI',
+        shortDesc: 'This type of UI, is a short toggleable list mean\'t to be displayed as an overlay on a player\'s ' +
+            'screen when they are playing Grand Theft Auto. It takes a list of names and status\'s to display who is' +
+            'currently active in game.',
         languages: [
             'javascript',
             'html5',
             'css3',
-            'jquery',
-            'bootstrap 4',
         ],
-        previewImg: './resources/img/projects/userInterfaces/mineral.PNG',
-        longDetails: 'lorem longer details',
+        previewImg: './resources/img/projects/userInterfaces/playerList.PNG',
+        longDetails: 'The list is scrollable and is getting the data dynamically.',
         links: [
-            '<a href="http://coastal-kombi.herokuapp.com/">Click Here to Visit a Demo of the Site</a>',
-            '<a href="http://coastal-kombi.herokuapp.com/">Click Here to Visit a Demo of the Site</a>'
         ],
         media: [
-            '<div class="mediaImg" style="background-image: url(' + './resources/img/projectPreview.PNG' + ')"></div>',
-            '<video class="mediaVid" controls src="./resources/vid/dedicatedDebator.mp4"></video>',
+            '<div class="mediaImg" style="background-size: contain !important; background-image: url(' + './resources/img/projects/userInterfaces/playerList.PNG' + ')"></div>',
         ],
-        dateStart: 'September 2018',
-        dateEnd: 'Still Under Development',
-    }
+        dateStart: 'July 2018',
+        dateEnd: 'July 2018',
+    },
+    {
+        title: 'Fish Shop UI',
+        shortDesc: 'This is a User Interface created to be used inside Grand Theft Auto V. It is intended for players to ' +
+            'interact with and use for a fishing job that was created alongside it. I was tasked with taking the previous' +
+            'UI and creating a better one with the same functionality.',
+        languages: [
+            'javascript',
+            'html5',
+            'css3',
+        ],
+        previewImg: './resources/img/projects/userInterfaces/fishShop.PNG',
+        longDetails: 'Another team member created the first edition of this UI, and I was tasked with creating a better' +
+            'looking more efficient user interface.',
+        links: [
+        ],
+        media: [
+            '<h5>Old Shop UI</h5>',
+            '<div class="mediaImg" style="background-size: contain !important; background-image: url(' + './resources/img/projects/userInterfaces/fishShop-old.PNG' + ')"></div>',
+            '<h5>New and Improved Shop UI</h5>',
+            '<div class="mediaImg" style="background-size: contain !important; background-image: url(' + './resources/img/projects/userInterfaces/fishShop.PNG' + ')"></div>',
+        ],
+        dateStart: 'June 2018',
+        dateEnd: 'June 2018',
+    },
+    {
+        title: 'Trucker Job UI',
+        shortDesc: 'This is a User Interface created to be used inside Grand Theft Auto V. It is intended for players to ' +
+            'interact with and use for a trucking job that was created alongside it. I was tasked with creating this UI.' +
+            'It allows a user to select a truck and trailer.',
+        languages: [
+            'javascript',
+            'html5',
+            'css3',
+        ],
+        previewImg: './resources/img/projects/userInterfaces/trucker-main.PNG',
+        longDetails: 'The UI checks if a user has the proper licenses or not and if they do not it does not allow the user to' +
+            'proceed through the user interface. You can so an example of users who have a license and who do not in videos below.' +
+            'This UI takes the data of what the user clicks and then passes that data to the backend to spawn in those vehicles.',
+        links: [
+        ],
+        media: [
+            '<h5>Main Truck Selection Page</h5>',
+            '<div class="mediaImg" style="background-size: contain !important; background-image: url(' + './resources/img/projects/userInterfaces/trucker-main.PNG' + ')"></div>',
+            '<h5>Training Page</h5>',
+            '<div class="mediaImg" style="background-size: contain !important; background-image: url(' + './resources/img/projects/userInterfaces/trucker-training.PNG' + ')"></div>',
+            '<h5>Trailer Selection Page</h5>',
+            '<div class="mediaImg" style="background-size: contain !important; background-image: url(' + './resources/img/projects/userInterfaces/trucker-trailer.PNG' + ')"></div>',
+            '<h5>Example of User without License</h5>',
+            '<video class="mediaVid" controls src="./resources/vid/trucker-noCDL.mp4"></video>',
+            '<h5>Example of User with License</h5>',
+            '<video class="mediaVid" controls src="./resources/vid/trucker-yesCDL.mp4"></video>',
+        ],
+        dateStart: 'June 2018',
+        dateEnd: 'June 2018',
+    },
 
 ];
 
