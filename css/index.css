@@ -159,7 +159,8 @@ footer {
     height: 300px;
     border-radius: 50%;
     transform: translateY(100px);
-    background: url("../resources/img/me.jpg") center center no-repeat;
+    background: black;
+    /*background: url("../resources/img/me.jpg") center center no-repeat;*/
     background-size: cover;
 }
 
