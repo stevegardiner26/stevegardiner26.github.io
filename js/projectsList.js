@@ -49,9 +49,55 @@ var websitesDB = [
         ],
         media: [
             '<video class="mediaVid" controls src="./resources/vid/coastal-kombi.mp4"></video>',
+            '<h5>Old Site Before I made the New One</h5>',
+            '<video class="mediaVid" controls src="./resources/vid/coastalkombibefore.mp4"></video>',
         ],
         dateStart: 'September 2018',
         dateEnd: 'Still Under Development',
+    },
+    {
+        title: 'My Portfolio Site',
+        shortDesc: 'A portfolio page that I created to house all my work and experience. Fully Dynamic and Responsive. ' +
+            'The projects listings are dynamically injected from the a JSON object and then categorized and laid out. Making' +
+            ' it very easy to add projects.',
+        languages: [
+            'javascript',
+            'html5',
+            'css3',
+            'jquery',
+            'bootstrap 4',
+        ],
+        previewImg: './resources/img/projects/websites/portfolio.PNG',
+        longDetails: '',
+        links: [
+            '<a href="http://stevegardiner.org/">Click Here to Visit the Site</a>',
+        ],
+        media: [
+        ],
+        dateStart: 'September 2018',
+        dateEnd: 'Jan 2019',
+    },
+    {
+        title: 'Mafia City Roleplay (Minor Edits)',
+        shortDesc: 'I did not create this site however I did do some freelance work on this site. Including incorporating' +
+            'a slideshow gallery of youtube videos.',
+        languages: [
+            'javascript',
+            'html5',
+            'css3',
+            'jquery',
+            'bootstrap 4',
+        ],
+        previewImg: './resources/img/projects/websites/mcrp.PNG',
+        longDetails: '',
+        links: [
+            '<a href="https://mafiacity-rp.com/">Click Here to Visit the Site</a>',
+        ],
+        media: [
+            '<div class="mediaImg" style="background-image: url(' + './resources/img/projects/websites/mcrp2.PNG' + ')"></div>',
+        ],
+        dateStart: 'September 2018',
+        dateEnd: 'N/A',
     }
 ];
 
