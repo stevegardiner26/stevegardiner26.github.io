@@ -145,11 +145,11 @@ footer {
 }
 
 .home-main .btn2:hover {
-    background: gray;
+    background: lightgray;
 }
 
 .home-about {
-    background: lightgray;
+    background: white;
     height: 550px;
     color: #333;
 }
@@ -182,7 +182,7 @@ footer {
 .home-skills .col-md{
     height: 200px;
     margin: 50px 30px;
-    background: lightgray;
+    background: white;
     box-shadow: 0px 5px 10px rgba(0,0,0,.3);
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
