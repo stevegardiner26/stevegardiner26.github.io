@@ -151,6 +151,221 @@ var userInterfacesDB = [
         dateStart: 'June 2018',
         dateEnd: 'June 2018',
     },
+    {
+        title: 'Help Menu UI',
+        shortDesc: 'This is a User Interface created to be used inside Grand Theft Auto V. It is intended for players to ' +
+            'interact with and use to get a list of commands, and shortcuts and common information that is often asked to help' +
+            'players with their experience.',
+        languages: [
+            'javascript',
+            'html5',
+            'css3',
+        ],
+        previewImg: './resources/img/projects/userInterfaces/helpMenu.PNG',
+        longDetails: '',
+        links: [
+        ],
+        media: [
+            '<video class="mediaVid" controls src="./resources/vid/helpMenu.mp4"></video>',
+        ],
+        dateStart: 'June 2018',
+        dateEnd: 'June 2018',
+    },
+    {
+        title: 'Job Offer UI',
+        shortDesc: 'This is a User Interface created to be used inside Grand Theft Auto V. It is intended for players to ' +
+            'interact with and use for any job, requiring players to agree with the terms and sign their name to proceed.',
+        languages: [
+            'javascript',
+            'html5',
+            'css3',
+        ],
+        previewImg: './resources/img/projects/userInterfaces/jobOffer.PNG',
+        longDetails: 'This is programmed in a way that a developer can dynamically add the images, and data to a JSON object' +
+            'and then they can select each JSON instance to select which version of the job offer they want to display. The three' +
+            'images at the bottom are intended to be advertisements for other companies within the server.',
+        links: [
+        ],
+        media: [
+            '<h5>First Instance</h5>',
+            '<video class="mediaVid" controls src="./resources/vid/jobOffer.mp4"></video>',
+            '<h5>Second Version w/ Restyle</h5>',
+            '<div class="mediaImg" style="background-size: contain !important; background-image: url(' + './resources/img/projects/userInterfaces/jobOffer.PNG' + ')"></div>',
+        ],
+        dateStart: 'June 2018',
+        dateEnd: 'June 2018',
+    },
+    {
+        title: 'Elevator UI',
+        shortDesc: 'This is a User Interface created to be used inside Grand Theft Auto V. It is intended for players to ' +
+            'interact with and use to navigate an elevator to different floors of a building.',
+        languages: [
+            'javascript',
+            'html5',
+            'css3',
+        ],
+        previewImg: './resources/img/projects/userInterfaces/elevator.PNG',
+        longDetails: '',
+        links: [
+        ],
+        media: [
+            '<video class="mediaVid" controls src="./resources/vid/hud.mp4"></video>',
+        ],
+        dateStart: 'June 2018',
+        dateEnd: 'June 2018',
+    },
+    {
+        title: 'Heads Up Display UI',
+        shortDesc: 'This is a User Interface created to be used inside Grand Theft Auto V. It is intended for players to ' +
+            'consistently view while playing the game, and it will display a live status on several key player stats.',
+        languages: [
+            'javascript',
+            'html5',
+            'css3',
+        ],
+        previewImg: './resources/img/projects/userInterfaces/hud.PNG',
+        longDetails: 'The HUD keeps track of the time, money on hand, bank account balance, hunger and the players name. If a player' +
+            'enters a vehicle then the extended version of the HUD pops up and shows, the vehicle speedometer, fuel, license plater, and' +
+            'vehicle model.',
+        links: [
+        ],
+        media: [
+        ],
+        dateStart: 'June 2018',
+        dateEnd: 'June 2018',
+    },
+    {
+        title: 'Radio UI',
+        shortDesc: 'This is a User Interface created to be used inside Grand Theft Auto V. It is intended for players to ' +
+            'interact with and use to navigate radio channels, so the player can talk in Voip with other players on the same frequency.',
+        languages: [
+            'javascript',
+            'html5',
+            'css3',
+        ],
+        previewImg: './resources/img/projects/userInterfaces/radio.PNG',
+        longDetails: '',
+        links: [
+        ],
+        media: [
+            '<video class="mediaVid" controls src="./resources/vid/radio.mp4"></video>',
+        ],
+        dateStart: 'June 2018',
+        dateEnd: 'June 2018',
+    },
+    {
+        title: 'PD Desk UI',
+        shortDesc: 'This is a User Interface created to be used inside Grand Theft Auto V. It is intended for players to ' +
+            'interact with and use to pay off tickets and change their player name.',
+        languages: [
+            'javascript',
+            'html5',
+            'css3',
+        ],
+        previewImg: './resources/img/projects/userInterfaces/pddesk.PNG',
+        longDetails: '',
+        links: [
+        ],
+        media: [
+            '<video class="mediaVid" controls src="./resources/vid/pddesk.mp4"></video>',
+            '<video class="mediaVid" controls src="./resources/vid/pddeskname.mp4"></video>',
+        ],
+        dateStart: 'June 2018',
+        dateEnd: 'June 2018',
+    },
+    {
+        title: 'License DMV UI',
+        shortDesc: 'This is a User Interface created to be used inside Grand Theft Auto V. It is intended for players to ' +
+            'interact with and use to take a road test and get their driving licenses.',
+        languages: [
+            'javascript',
+            'html5',
+            'css3',
+        ],
+        previewImg: './resources/img/projects/userInterfaces/license.PNG',
+        longDetails: 'The way this UI works is it detects if a user passed the written test and if they have not it shows the' +
+            'main homepage, and offers them a chance to take the exam. Then they are navigated to the exam page and this is' +
+            'programmed so that the questions and answers can all be dynamically loaded in via a JSON object. The code also' +
+            'grades the test and if a user gets 80% correct then it allows them to continue to the three road test options which' +
+            'can be selected. If the user scores less than 80% they are prompted to retry the test.',
+        links: [
+        ],
+        media: [
+            '<video class="mediaVid" controls src="./resources/vid/license1.mp4"></video>',
+            '<video class="mediaVid" controls src="./resources/vid/license2.mp4"></video>',
+            '<video class="mediaVid" controls src="./resources/vid/license3.mp4"></video>',
+        ],
+        dateStart: 'June 2018',
+        dateEnd: 'June 2018',
+    },
+    {
+        title: 'Clothing Shop UI',
+        shortDesc: 'This is a User Interface created to be used inside Grand Theft Auto V. It is intended for players to ' +
+            'select a type of clothing they want and it will be previewed on their player and then they can purchase it.',
+        languages: [
+            'javascript',
+            'html5',
+            'css3',
+        ],
+        previewImg: './resources/img/projects/userInterfaces/clothingstore.PNG',
+        longDetails: '',
+        links: [
+        ],
+        media: [
+            '<h5>First Edition</h5>',
+            '<video class="mediaVid" controls src="./resources/vid/clothes1.mp4"></video>',
+            '<h5>Revised Edition</h5>',
+            '<video class="mediaVid" controls src="./resources/vid/clothes2.mp4"></video>',
+        ],
+        dateStart: 'June 2018',
+        dateEnd: 'June 2018',
+    },
+    {
+        title: 'Inventory UI',
+        shortDesc: 'This is a User Interface created to be used inside Grand Theft Auto V. It is intended for players to ' +
+            'display player stats and manage items on their person and in vehicles and on the ground. I modeled this inventory' +
+            'pixel by pixel off of images of the game Arma 3\'s inventory.',
+        languages: [
+            'javascript',
+            'html5',
+            'css3',
+        ],
+        previewImg: './resources/img/projects/userInterfaces/inventory.PNG',
+        longDetails: 'This detects whether a player is near a vehicle and it detects all items around and allows users to' +
+            'manage these items and move them between places.',
+        links: [
+        ],
+        media: [
+            '<video class="mediaVid" controls src="./resources/vid/inventory.mp4"></video>',
+        ],
+        dateStart: 'June 2018',
+        dateEnd: 'June 2018',
+    },
+    {
+        title: 'Mobile Database Computer UI',
+        shortDesc: 'This is a User Interface created to be used inside Grand Theft Auto V. It is intended for players to ' +
+            'who are roleplaying as a Police Officer to manage many things. This is by far my most extensive user interface' +
+            'so far consisting of 5000+ lines of code.',
+        languages: [
+            'javascript',
+            'html5',
+            'css3',
+        ],
+        previewImg: './resources/img/projects/userInterfaces/mdc.PNG',
+        longDetails: '',
+        links: [
+        ],
+        media: [
+            '<h5>First Edition</h5>',
+            '<video class="mediaVid" controls src="./resources/vid/mdc.mp4"></video>',
+            '<h5>Revised Edition</h5>',
+            '<video class="mediaVid" controls src="./resources/vid/newMDC.mp4"></video>',
+            '<div class="mediaImg" style="background-size: contain !important; background-image: url(' + './resources/img/projects/userInterfaces/mdcCall.PNG' + ')"></div>',
+            '<video class="mediaVid" controls src="./resources/vid/newMDC2.mp4"></video>',
+        ],
+        dateStart: 'October 2018',
+        dateEnd: 'October 2018',
+    },
 
 ];
 
