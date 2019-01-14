@@ -144,6 +144,10 @@ footer {
     animation-fill-mode: forwards;
 }
 
+.home-main .btn2 {
+    background: white;
+}
+
 .home-main .btn2:hover {
     background: lightgray;
 }
