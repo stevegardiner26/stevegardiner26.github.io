@@ -4,6 +4,28 @@ section {
     padding-top: 80px;
 }
 
+@media only screen and (max-width: 450px) {
+    section {
+        min-height: 2380px;
+    }
+
+    .download-btn {
+        width: 75px;
+        overflow: hidden;
+    }
+
+    .fa-linkedin {
+        margin-left: 35px !important;
+    }
+
+    .fa-download {
+        font-size: 38px !important; 
+        padding: 7px;
+        margin-right: 9px;
+    }
+}
+
+
 /*
 hr {
     background: rgb(2,148,0);
