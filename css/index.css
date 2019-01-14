@@ -13,6 +13,27 @@ nav {
     padding: 10px 10px !important;
 }
 
+.navdes {
+
+}
+
+.navm {
+    display: none;
+    transition: height 1s;
+}
+
+@media only screen and (max-width: 450px) {
+    .navdes {
+        display: none;
+    }
+
+    .navm {
+        display: inherit;
+        height: 50px;
+        overflow: hidden;
+    }
+}
+
 nav .active {
     border-bottom: 2px solid white;
 }
