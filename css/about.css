@@ -1,6 +1,7 @@
 section {
     position: relative;
-    min-height: 1175px;
+    min-height: auto;
+    height: auto !important;
     padding-top: 80px;
 }
 
