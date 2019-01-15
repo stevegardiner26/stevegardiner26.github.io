@@ -19,6 +19,24 @@ section {
     background-attachment: fixed;
 }
 
+@media only screen and (max-width: 450px) {
+    .form-container {
+        margin-left: 0px !important;
+    }
+
+    section {
+        height: 1200px !important;
+    }
+
+    .upwork, .github {
+        top: 135% !important;
+    }
+
+    .email, .linkedIn {
+        top: 110% !important;
+    }
+}
+
 hr {
     border-top: 2px solid;
     height: 2px;
