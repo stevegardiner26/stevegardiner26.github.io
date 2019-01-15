@@ -145,7 +145,7 @@ section .nav .active {
     font-weight: bold;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 575px) {
     section {
         min-height: 1260px;
     }

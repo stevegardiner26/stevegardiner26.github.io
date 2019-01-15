@@ -4,7 +4,7 @@ section {
     padding-top: 80px;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 575px) {
     section {
         min-height: 2380px;
     }
