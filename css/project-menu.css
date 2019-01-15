@@ -158,4 +158,12 @@ section .nav .active {
         border-bottom: 2px solid rgba(2,148,0,.5);
         margin-bottom: 20px;
     }
+
+    .singleReversal {
+        flex-direction: column-reverse !important;
+    }
+
+    .shortDesc {
+        margin-top: 40px !important;
+    }
 }
