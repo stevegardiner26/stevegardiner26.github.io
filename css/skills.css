@@ -13,6 +13,16 @@ section .container {
     min-height: 100vh;
 }
 
+@media only screen and (max-width: 450px) {
+    .card {
+        margin: 10px 0px !important;
+    }
+
+    .form-control {
+        margin-bottom: 10px !important;
+    }
+}
+
 section h1 {
     padding: 20px 0px;
 }
