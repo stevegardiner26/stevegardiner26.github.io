@@ -533,19 +533,19 @@ function showSearch(value) {
     var locat = location.href.substring(location.href.lastIndexOf('#') + 1);
     if (locat.substring(0, 6) === 'search' || locat === 'all') {
         showAll(true);
+        let part = 0;
         $('.projectSearch')[0].value = value;
         let temp = document.getElementById('v-pills-all');
         for (var v = 0; v < temp.childNodes.length; v++) {
             if(temp.childNodes[v].innerHTML.toString().indexOf(value.toString()) === -1) {
                 temp.childNodes[v].style.display = 'none';
+                part++;
             }
         }
-        for(var q = 0; q < temp.children.length; q++) { //TODO: Fix this is doesnt work properly
-            if(temp.children[q].style.display == 'none') {
-                document.getElementsByClassName('noSearch')[0].style.display = 'block';
-            } else {
-                document.getElementsByClassName('noSearch')[0].style.display = 'none';
-            }
+        if (part != temp.childNodes.length) {
+            document.getElementsByClassName('noSearch')[0].style.display = 'none';
+        } else {
+            document.getElementsByClassName('noSearch')[0].style.display = 'block';
         }
     } else {
         let temp = document.getElementById('v-pills-' + locat);
