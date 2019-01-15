@@ -22,18 +22,6 @@ nav {
     transition: height 1s;
 }
 
-@media only screen and (max-width: 450px) {
-    .navdes {
-        display: none;
-    }
-
-    .navm {
-        display: inherit;
-        height: 50px;
-        overflow: hidden;
-    }
-}
-
 nav .active {
     border-bottom: 2px solid white;
 }
@@ -402,4 +390,67 @@ footer a:hover {
 
 .cnt:hover {
     opacity: .8;
+}
+
+
+@media only screen and (max-width: 450px) {
+    .navdes {
+        display: none;
+    }
+
+    .navm {
+        display: inherit;
+        height: 50px;
+        overflow: hidden;
+    }
+
+    .home-main h1 {
+        font-size: 42px !important;
+    }
+
+    .home-main h2 {
+        font-size: 24px;
+    }
+
+    .home-main .head2 {
+        width: 84%;
+        margin: auto;
+    }
+
+    .backgroundImage {
+        margin-left: 0;
+    }
+
+    .parallax-text {
+        font-size: 42px;
+    }
+
+    .home-about {
+        height: 1400px;
+    }
+
+    .home-skills {
+        height: auto;
+    }
+
+    .home-projects {
+        height: auto;
+    }
+
+    .project-preview {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .home-contact, .home-contact .container {
+        height: auto;
+    }
+
+    .home-contact .container {
+        margin-bottom: 40px;
+    }
+
+    .home-contact .col-md:first-child {
+        margin-bottom: 20px;
+    }
 }
