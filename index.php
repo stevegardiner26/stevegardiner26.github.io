@@ -14,10 +14,10 @@
 <div class="container-fluid" style="padding: 0;">
     <nav class="navdes navbar navbar-expand-sm bg-dark2 navbar-dark">
         <ul class="navbar-nav">
-            <li class="nav-item logo" style="background-image: url('resources/img/logo.png');" onclick="location.href='index.html'">
+            <li class="nav-item logo" style="background-image: url('resources/img/logo.png');" onclick="location.href='index.php'">
             </li>
             <li class="nav-item">
-                <a href="index.html" class="nav-link active">Home</a>
+                <a href="index.php" class="nav-link active">Home</a>
             </li>
             <li class="nav-item">
                 <a href="about.html" class="nav-link">About</a>
@@ -42,7 +42,7 @@
                 <i class="fa fa-bars" style="font-size:28px; color: white;"></i>
             </li>
             <li class="nav-item">
-                <a href="index.html" class="nav-link active">Home</a>
+                <a href="index.php" class="nav-link active">Home</a>
             </li>
             <li class="nav-item">
                 <a href="about.html" class="nav-link">About</a>
