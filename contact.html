@@ -75,14 +75,14 @@
             <hr>
             <div class="row no-gutters">
                 <div class="col-md-6 offset-3 form-container">
-                    <form action="mailto:stevegardiner526@gmail.com?Subject=Freelance%20Inquiry:%20" method="POST">
+                    <form action="form-to-email.php" method="POST">
                         <br>
                         <label for="name">Name:</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="inputGroup-name"><i class="fa fa-user fa-fw"></i></span>
                             </div>
-                            <input id="name" type="text" class="form-control">
+                            <input name="name" id="name" type="text" class="form-control">
                         </div>
                         <br>
                         <label for="email">Email:</label>
@@ -90,7 +90,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="inputGroup-email"><i class="fa fa-envelope fa-fw"></i></span>
                             </div>
-                            <input type="email" class="form-control" id="email">
+                            <input name="email" type="email" class="form-control" id="email">
                         </div>
                         <br>
                         <label for="message">Message:</label>

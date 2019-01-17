@@ -1,7 +1,7 @@
 <?php
     $name = $_POST['name'];
     $visitor_email = $_POST['email'];
-    $option = $_POST['work-type'];
+    $option = $_POST['work-type']; //not on contact page
     $message = $_POST['message'];
 
 function IsInjected($str)
