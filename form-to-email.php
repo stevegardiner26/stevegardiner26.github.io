@@ -1,44 +1,42 @@
 <?php
-    $name = $_POST['name'];
-    $visitor_email = $_POST['email'];
-    $option = $_POST['work-type']; //not on contact page
-    $message = $_POST['message'];
 
-function IsInjected($str)
-{
-    $injections = array('(\n+)',
-           '(\r+)',
-           '(\t+)',
-           '(%0A+)',
-           '(%0D+)',
-           '(%08+)',
-           '(%09+)'
-           );
-    $inject = join('|', $injections);
-    $inject = "/$inject/i";
-    if(preg_match($inject,$str))
-    {
-      return true;
-    }
-    else
-    {
-      return false;
-    }
+$name = $_POST['name'];
+$visitor_email = $_POST['email'];
+$option = $_POST['work-type']; //not on contact page
+$message = $_POST['message'];
+
+require '/var/vendor/autoload.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+
+$mail = new PHPMailer;
+
+$mail->isSMTP();
+
+$mail->setFrom('stevegardiner526@gmail.com', 'From Amazon');
+$mail->addAddress('stevegardiner526@gmail.com', 'To Steve');
+
+$mail->Username = 'AKIAJJY63ACKVPFHU7WA';
+$mail->Password = 'AhwqCCDkqiXovEPc7ndmdOMZiKNnRORi2/vkibUOwbVw';
+
+$mail->Host = 'email-smtp.us-east-1.amazonaws.com';
+
+$mail->Subject = 'Freelance Work From stevegardiner.org';
+
+$mail->Body = '<h4>' . $name . ' submitted a form on your site!</h4><br><p>Reply Email: ' . $visitor_email . '</p><br><h6>Message:</h6><br><p>' . $message . '</p>';
+
+$mail->SMTPAuth = true;
+
+$mail->SMTPSecure = 'tls';
+$mail->Port = 587;
+
+$mail->isHTML(true);
+
+$mail->AltBody = "Email Test\r\nThis email was sent through Aamzon";
+
+if(!$mail->send()) {
+	echo "Email not sent. ", $mail->ErrorInfo , PHP_EOL;
+} else {
+	echo "Email Sent!", PHP_EOL;
 }
-if(IsInjected($visitor_email))
-{
-    echo "Bad email value!";
-    exit;
-}
-
-    $email_from = 'gps5269@gmail.com';
-    $email_subject = "Freelance Work: $name";
-    $email_body = "You have received a new message from the user $name for $option.\n".
-                            "Here is the message:\n $message".
-
-    $to = "stevegardiner26@gmail.com";
-    $headers = "From: $email_from \r\n";
-    $headers .= "Reply-To: $visitor_email \r\n";
-    mail($to,$email_subject,$email_body,$headers);
-
 ?>
