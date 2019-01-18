@@ -74,15 +74,15 @@
             </div>
             <hr>
             <div class="row no-gutters">
-                <div class="col-md-6 offset-3 form-container">
-                    <form action="form-to-email.php" method="POST">
+                <div class="col-md-6 offset-3 form-container" style="height: 600px;">
+                    <form action="contact.php" method="POST">
                         <br>
                         <label for="name">Name:</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="inputGroup-name"><i class="fa fa-user fa-fw"></i></span>
                             </div>
-                            <input name="name" id="name" type="text" class="form-control">
+                            <input name="name" id="name" type="text" required class="form-control">
                         </div>
                         <br>
                         <label for="email">Email:</label>
@@ -90,7 +90,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="inputGroup-email"><i class="fa fa-envelope fa-fw"></i></span>
                             </div>
-                            <input name="email" type="email" class="form-control" id="email">
+                            <input name="email" type="email" required class="form-control" id="email">
                         </div>
                         <br>
                         <label for="message">Message:</label>
