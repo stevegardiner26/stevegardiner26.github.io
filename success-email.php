@@ -53,7 +53,7 @@ $mail->AltBody = "Email:\r\nThis email was sent from your site form!";
     <link rel="shortcut icon" type="image/x-icon" href="resources/img/logo.png" />
     <script src="./js/index.js"></script>
 </head>
-<body>
+<body onload="document.getElementsByClassName('home-contact')[0].scrollIntoView({ behavior: 'smooth', block: 'center' })">
 <div class="container-fluid" style="padding: 0;">
     <nav class="navdes navbar navbar-expand-sm bg-dark2 navbar-dark">
         <ul class="navbar-nav">
