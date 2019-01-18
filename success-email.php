@@ -1,3 +1,46 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: steve
+ * Date: 1/17/2019
+ * Time: 8:30 PM
+ */
+$name = $_POST['name'];
+$visitor_email = $_POST['email'];
+$option = $_POST['work-type'];
+$message = $_POST['message'];
+
+require '/var/vendor/autoload.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+
+$mail = new PHPMailer;
+
+$mail->isSMTP();
+
+$mail->setFrom('stevegardiner526@gmail.com', 'From Amazon');
+$mail->addAddress('stevegardiner526@gmail.com', 'To Steve');
+
+$mail->Username = 'AKIAJJY63ACKVPFHU7WA';
+$mail->Password = 'AhwqCCDkqiXovEPc7ndmdOMZiKNnRORi2/vkibUOwbVw';
+
+$mail->Host = 'email-smtp.us-east-1.amazonaws.com';
+
+$mail->Subject = 'Freelance Work From stevegardiner.org';
+
+$mail->Body = '<h4>' . $name . ' submitted a form on your site for' . $option . '!</h4><p>Reply Email: ' . $visitor_email . '</p><h6>Message:</h6><p>' . $message . '</p>';
+
+$mail->SMTPAuth = true;
+
+$mail->SMTPSecure = 'tls';
+$mail->Port = 587;
+
+$mail->isHTML(true);
+
+$mail->AltBody = "Email:\r\nThis email was sent from your site form!";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -195,48 +238,18 @@
         <div class="container mx-auto">
             <div class="row">
                 <div class="col-md">
-                    <h1 class="text-center" style="padding: 5px;"><strong>Contact Me</strong></h1>
-                    <form action="success-email.php" name="myemailform" method="POST">
-                        <div class="form-group">
-                            <label for="">Name: </label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroup-name"><i class="fa fa-user fa-fw"></i></span>
-                                </div>
-                                <input class="form-control" name="name" type="text" placeholder="Your Name">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="">Email:</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroup-email"><i class="fa fa-envelope fa-fw"></i></span>
-                                </div>
-                                <input class="form-control" name="email" type="email" placeholder="example@example.com" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="">What do you need?</label>
-                            <select name="work-type" id="connection" class="form-control" required>
-                                <option value="create">Create a Website</option>
-                                <option value="lunch">Go for Lunch</option>
-                                <option value="edit">Edit a Website</option>
-                                <option value="ui">UI Design/Creation</option>
-                                <option value="other">Other</option>
-                            </select>
-                            <small class="form-text text-muted">If none of these apply choose other and explain it in the message.</small>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroup-message"><i class="fa fa-comment fa-fw"></i></span>
-                                </div>
-                                <textarea name="message" id="" cols="30" rows="9" class="form-control" placeholder="Message..." required></textarea>
-                            </div>
-                        </div>
-
-                        <button type="submit" style="margin-top: 20px; display: block;" class="mx-auto btn-success btn">Connect with Steve</button>
-                    </form>
+                    <?php
+                    if(!$mail->send()) {
+                        echo "
+							    <h4 class=\"text-center\" style=\"margin-top: 35px;\">There was an error with sending your email!</h4>
+							", $mail->ErrorInfo , PHP_EOL;
+                    } else {
+                        echo "
+								<h4 class=\"text-center\" style=\"margin-top: 170px;\">Your Email was Sent!</h4>
+                                <h4 class=\"text-center\" style=\"margin-top: 35px;\">Thank you for Contacting Us! Keep an eye on your email, we will be in touch!</h4>
+							", PHP_EOL;
+                    }
+                    ?>
                 </div>
                 <div class="col-md">
                     <div class="row">
@@ -328,9 +341,9 @@
 </div>
 </body>
 <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
 <script>
     function skillMore() {
         document.getElementsByClassName('arrow2')[0].style.transform = "translateX(250px)";
