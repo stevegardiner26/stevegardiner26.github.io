@@ -1,0 +1,91 @@
+[
+  {
+    "title": "Dedicated Debator",
+    "shortDesc": "A website that users can anonymously log into a chat room based off of a discussion issue and connect with people to debate issues. The goal of this project was to bring people closer together by letting them exchange views and maybe people could find common ground.",
+    "languages": [
+      "javascript",
+      "html5",
+      "css3",
+      "jquery",
+      "php",
+      "heroku"
+    ],
+    "previewImg": "./resources/img/projects/websites/dd.PNG",
+    "longDetails": "This project was created at a 24 hour NJIT hackathon run by Major League Hacking and was created within the time block. The main goal of my creation for this site was so that I could learn backend php and reteach myself heroku two skills which I find very useful to this day. The frontend of the site was simply a bootstrap template because I knew frontend at the time and knew I was going to have to spend all my time on backend to complete the project within the timeline.",
+    "links": [
+      "<a href='http://dedicated-debator.herokuapp.com/'>Click Here to Visit a Demo of the Site</a>",
+      "<a href='https://github.com/stevegardiner26/Dedicated-Debator'>Click Here to Visit the Github Repository</a>"
+    ],
+    "media": [
+      "<div class=\"mediaImg\" style=\"background-image: url('./resources/img/projects/websites/dedicatedHome.PNG')\"></div>",
+      "<video class=\"mediaVid\" controls src=\"./resources/vid/dedicatedDebator.mp4\"></video>"
+    ],
+    "dateStart": "November 2018",
+    "dateEnd": "November 2018"
+  },
+  {
+    "title": "Coastal Kombi",
+    "shortDesc": "A simple single page landing page for the coastal kombi. Fully Dynamic and Responsive. This project includes a virtual tour of the van which allows a user to click certain features of the van and it changes the picture of the van.",
+    "languages": [
+      "javascript",
+      "heroku",
+      "html5",
+      "css3",
+      "jquery",
+      "bootstrap 4"
+    ],
+    "previewImg": "./resources/img/projects/websites/coastal.PNG",
+    "longDetails": "",
+    "links": [
+      "<a href=\"http://coastal-kombi.herokuapp.com/\">Click Here to Visit a Demo of the Site</a>"
+    ],
+    "media": [
+      "<video class=\"mediaVid\" controls src=\"./resources/vid/coastal-kombi.mp4\"></video>",
+      "<h5>Old Site Before I made the New One</h5>",
+      "<video class=\"mediaVid\" controls src=\"./resources/vid/coastalkombibefore.mp4\"></video>"
+    ],
+    "dateStart": "September 2018",
+    "dateEnd": "Still Under Development"
+  },
+  {
+    "title": "My Portfolio Site",
+    "shortDesc": "A portfolio page that I created to house all my work and experience. Fully Dynamic and Responsive. The projects listings are dynamically injected from the a JSON object and then categorized and laid out. Making it very easy to add projects.",
+    "languages": [
+      "javascript",
+      "html5",
+      "css3",
+      "jquery",
+      "bootstrap 4"
+    ],
+    "previewImg": "./resources/img/projects/websites/portfolio.PNG",
+    "longDetails": "",
+    "links": [
+      "<a href=\"http://stevegardiner.org/\">Click Here to Visit the Site</a>"
+    ],
+    "media": [
+    ],
+    "dateStart": "September 2018",
+    "dateEnd": "Jan 2019"
+  },
+  {
+    "title": "Mafia City Roleplay (Minor Edits)",
+    "shortDesc": "I did not create this site however I did do some freelance work on this site. Including incorporating a slideshow gallery of youtube videos.",
+    "languages": [
+      "javascript",
+      "html5",
+      "css3",
+      "jquery",
+      "bootstrap 4"
+    ],
+    "previewImg": "./resources/img/projects/websites/mcrp.PNG",
+    "longDetails": "",
+    "links": [
+      "<a href=\"https://mafiacity-rp.com/\">Click Here to Visit the Site</a>"
+    ],
+    "media": [
+      "<div class=\"mediaImg\" style=\"background-image: url('./resources/img/projects/websites/mcrp2.PNG'')\"></div>"
+    ],
+    "dateStart": "September 2018",
+    "dateEnd": "N/A"
+  }
+]
