@@ -1,5 +1,7 @@
 //50 Word Limit for Short Desc
 //Unlimited for LongDetails
+var websitesDB, userInterfacesDB, adFormatsDB, tutorialsDB, otherDB, databasesDone;
+
 function loadJSON(url, callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
@@ -13,29 +15,41 @@ function loadJSON(url, callback) {
     xobj.send(null);
 }
 
-var websitesDB, userInterfacesDB, adFormatsDB, tutorialsDB, otherDB;
-
 function init() {
+    databasesDone = 0;
     loadJSON('./resources/json/websites.json',function(response) {
         // Parse JSON string into object
         websitesDB = JSON.parse(response);
+        databasesDone++;
     });
     loadJSON('./resources/json/userInterfaces.json',function(response) {
         // Parse JSON string into object
         userInterfacesDB = JSON.parse(response);
+        databasesDone++;
     });
     loadJSON('./resources/json/adFormats.json',function(response) {
         // Parse JSON string into object
         adFormatsDB = JSON.parse(response);
+        databasesDone++;
     });
     loadJSON('./resources/json/tutorials.json',function(response) {
         // Parse JSON string into object
         tutorialsDB = JSON.parse(response);
+        databasesDone++;
     });
     loadJSON('./resources/json/other.json',function(response) {
         // Parse JSON string into object
         otherDB = JSON.parse(response);
+        databasesDone++;
     });
+    isDone();
+    function isDone() {
+        if(databasesDone === 5) {
+            navCategoryPost();
+        } else {
+            setTimeout(isDone, 200);
+        }
+    }
 }
 
 function loadSingleProject() {

@@ -16,7 +16,6 @@ function navCategory(category) {
             location.href='./project-menu.html#other';
             break;
         default:
-            //TODO: place for individual Ads display to be programmed
             break;
     }
 }
@@ -28,7 +27,6 @@ function navCategoryPost() {
         sublocat = locat;
         locat = 'search';
     }
-    init();
     switch  (locat){
         case 'websites':
             $('#v-pills-websites-tab').addClass('active');
