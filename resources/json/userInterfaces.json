@@ -110,13 +110,13 @@
       "html5",
       "css3"
     ],
-    "previewImg": "./resources/img/projects/userInterfaces/jobOffer.PNG",
+    "previewImg": "./resources/img/projects/userInterfaces/JobOffer.PNG",
     "longDetails": "This is programmed in a way that a developer can dynamically add the images, and data to a JSON object and then they can select each JSON instance to select which version of the job offer they want to display. The three images at the bottom are intended to be advertisements for other companies within the server.",
     "links": [
     ],
     "media": [
       "<h5>First Instance</h5>",
-      "<video class=\"mediaVid\" controls src=\"./resources/vid/jobOffer.mp4\"></video>",
+      "<video class=\"mediaVid\" controls src=\"./resources/vid/JobOffer.mp4\"></video>",
       "<h5>Second Version w/ Restyle</h5>",
       "<div class=\"mediaImg\" style=\"background-size: contain !important; background-image: url('./resources/img/projects/userInterfaces/jobOffer.PNG')\"></div>"
     ],
