@@ -172,7 +172,7 @@ footer {
     border-radius: 50%;
     transform: translateY(100px);
     background: black;
-    /*background: url("../resources/img/me.jpg") center center no-repeat;*/
+    background: url("../resources/img/profile.jpg") center center no-repeat;
     background-size: cover;
 }
 
