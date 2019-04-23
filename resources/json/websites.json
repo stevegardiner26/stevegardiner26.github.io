@@ -48,6 +48,30 @@
     "dateEnd": "Still Under Development"
   },
   {
+    "title": "Broadstreet Ads",
+    "shortDesc": "This is a redesign of the homepage of broadstreetads.com, I did not design this however I did use the psds and the provided images from the designer to create this site from scratch",
+    "languages": [
+      "javascript",
+      "html5",
+      "css3",
+      "wordpress",
+      "bootstrap 3"
+    ],
+    "previewImg": "./resources/img/projects/websites/broadstreet_home.png",
+    "longDetails": "",
+    "links": [
+      "<a href=\"https://broadstreetads.com/\">Click Here to Visit the Site</a>"
+    ],
+    "media": [
+      "<h5>Main Site Display</h5>",
+      "<div class=\"mediaImg\" style=\"background-image: url('./resources/img/projects/websites/broadstreet_home.png'')\"></div>",
+      "<h5>Mobile Site Display</h5>",
+      "<div class=\"mediaImg\" style=\"background-image: url('./resources/img/projects/websites/broadstreet_mobile.png'')\"></div>"
+    ],
+    "dateStart": "April 2019",
+    "dateEnd": "April 2019"
+  },
+  {
     "title": "My Portfolio Site",
     "shortDesc": "A portfolio page that I created to house all my work and experience. Fully Dynamic and Responsive. The projects listings are dynamically injected from the a JSON object and then categorized and laid out. Making it very easy to add projects.",
     "languages": [
