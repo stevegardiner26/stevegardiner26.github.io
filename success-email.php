@@ -72,9 +72,6 @@ $mail->AltBody = "Email:\r\nThis email was sent from your site form!";
                 <a href="projects.html" class="nav-link">Projects</a>
             </li>
             <li class="nav-item">
-                <a href="courses.html" class="nav-link">Courses</a>
-            </li>
-            <li class="nav-item">
                 <a href="contact.html" class="nav-link">Contact</a>
             </li>
         </ul>
@@ -95,9 +92,6 @@ $mail->AltBody = "Email:\r\nThis email was sent from your site form!";
             </li>
             <li class="nav-item">
                 <a href="projects.html" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a href="courses.html" class="nav-link">Courses</a>
             </li>
             <li class="nav-item">
                 <a href="contact.html" class="nav-link">Contact</a>
