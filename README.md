@@ -6,3 +6,4 @@
 - Use VueJs or Alpine because I wrote this terribly when I first wrote it.
 - Show logo on mobile
 - Update Skills and remove pointless skills
+- Simplify the site with less pages. Not all this info needs to be on there.
